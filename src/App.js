@@ -40,7 +40,9 @@ export default function App() {
       />
       <Equipe nome="Andrey" cargo="Analista de mercado financeiro" idade="19" />
       <Equipe nome="Lucas" cargo="Desenvolvedor Back-end" idade="18" />
-      <Equipe nome="Vinicius" cargo="Veterinário" idade="20" />
+      <Equipe nome="Mateus" cargo="Veterinário" idade="20" />
+      <Equipe nome="Mariana" cargo="Médico" idade="21" />
+
     </div>
   );
 }
