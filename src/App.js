@@ -1,48 +1,45 @@
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
 
-const Equipe = (props) => {
-  return (
-    <div style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
-      <Sobre nome={props.nome} />
-      <p>
-        Cargo: {props.cargo} | Idade: {props.idade}
-      </p>
-      {/* 2. Corrigido: Social com "S" maiúsculo */}
-      <Social link={props.linkedin} />
+const Navbar = () => (
+  <nav className="container navbar">
+    <div className="logo">ROTA<br />BRASIL.</div>
+    <div className="nav-links">
+      <Link to="/">Home</Link>
+      <Link to="/explorar">Explorar</Link>
+      <Link to="/login">Entrar</Link>
     </div>
-  );
-};
+    <button className="btn-primary">Planejar Viagem</button>
+  </nav>
+);
 
-const Sobre = (props) => {
-  return <h2>Olá, eu sou o {props.nome}</h2>;
-};
+const Footer = () => (
+  <footer className="container" style={{ padding: '4rem 0', borderTop: '1px solid #eee', marginTop: '4rem', textAlign: 'center' }}>
+    <p>© 2026 RotaBrasil Monumental - Projeto Sistemas de Informação</p>
+  </footer>
+);
 
-const Social = (props) => {
+const Explorar = () => <div className="container"><h1>Página Explorar (Em breve)</h1></div>;
+const Login = () => <div className="container"><h1>Página de Login (JWT em breve)</h1></div>;
+
+function App() {
   return (
-    <div>
-      <h4>Redes Sociais</h4>
-      <a href={props.link} target="_blank" rel="noreferrer">
-        Linkedin
-      </a>
-    </div>
-  );
-};
+    <Router>
+      <div className="app-wrapper">
+        <Navbar />
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/explorar" element={<Explorar />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Conheça a nossa equipe:</h1>
-      <Equipe
-        nome="João"
-        cargo="Desenvolvedor Front-end"
-        idade="18"
-        linkedin="https://linkedin.com/in/joao"
-      />
-      <Equipe nome="Andrey" cargo="Analista de mercado financeiro" idade="19" />
-      <Equipe nome="Lucas" cargo="Desenvolvedor Back-end" idade="18" />
-      <Equipe nome="Mateus" cargo="Veterinário" idade="20" />
-      <Equipe nome="Mariana" cargo="Médico" idade="21" />
-
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
+
+export default App;

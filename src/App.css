@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800;900&display=swap');
+
+:root {
+  --bm-dark-green: #485C11;
+  --bm-muted-green: #8E9C78;
+  --bm-light-green: #DFECC6;
+  --bm-teal: #549E9C;
+  --bm-light-blue: #CCE5F2;
+  --bg-color: #F8F9FA;
+  --text-main: #0f172a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; }
+.logo { color: var(--bm-dark-green); font-weight: 900; font-size: 1.25rem; line-height: 1.1; }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; }
 
-.App-link {
-  color: #61dafb;
-}
+.btn-primary { background: var(--bm-dark-green); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 999px; font-weight: bold; cursor: pointer; }
+.btn-secondary { background: var(--bm-light-blue); color: var(--bm-dark-green); border: none; padding: 1rem 2rem; border-radius: 999px; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.hero { padding: 5rem 0; max-width: 800px; }
+.hero h1 { font-size: 5.5rem; font-weight: 900; line-height: 0.95; color: var(--bm-dark-green); letter-spacing: -3px; }
+.hero h1 span { color: var(--bm-teal); }
+.hero p { font-size: 1.5rem; color: #475569; margin: 2rem 0; }
+
+.bento-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; grid-auto-rows: 280px; }
+.bento-card { border-radius: 2rem; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; transition: 0.2s; cursor: pointer; }
+.bento-card:hover { transform: scale(1.02); }
+.col-span-2 { grid-column: span 2; }
+.bg-light-green { background-color: var(--bm-light-green); color: var(--bm-dark-green); }
+.bg-teal { background-color: var(--bm-teal); color: white; }
+.bg-muted-green { background-color: var(--bm-muted-green); color: white; }
+.bg-light-blue { background-color: var(--bm-light-blue); color: var(--bm-dark-green); }
+
+.destinos-section { padding: 5rem 0; }
+.destinos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.destino-card { background: white; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #edf2f7; }
+.destino-img { width: 100%; height: 240px; object-fit: cover; }
+.destino-info { padding: 1.5rem; }
+.destino-nome { font-size: 1.5rem; font-weight: 800; margin: 0; }
+.destino-estado { color: var(--bm-teal); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
+.tag { background: var(--bg-color); padding: 0.3rem 0.7rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; margin-right: 0.5rem; }
