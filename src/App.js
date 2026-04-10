@@ -17,12 +17,12 @@ const Navbar = () => (
 
 const Footer = () => (
   <footer className="container" style={{ padding: '4rem 0', borderTop: '1px solid #eee', marginTop: '4rem', textAlign: 'center' }}>
-    <p>© 2026 RotaBrasil Monumental - Projeto Sistemas de Informação</p>
+    <p>© 2026 RotaBrasil - Projeto Sistemas de Informação (Web Dev)</p>
   </footer>
 );
 
-const Explorar = () => <div className="container"><h1>Página Explorar (Em breve)</h1></div>;
-const Login = () => <div className="container"><h1>Página de Login (JWT em breve)</h1></div>;
+const Explorar = () => <div className="container"><h1>Página Explorar</h1></div>;
+const Login = () => <div className="container"><h1>Página de Login</h1></div>;
 
 function App() {
   return (
