@@ -1,28 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 import Home from './pages/Home';
 
-const Navbar = () => (
-  <nav className="container navbar">
-    <div className="logo">ROTA<br />BRASIL.</div>
-    <div className="nav-links">
-      <Link to="/">Home</Link>
-      <Link to="/explorar">Explorar</Link>
-      <Link to="/login">Entrar</Link>
-    </div>
-    <button className="btn-primary">Planejar Viagem</button>
-  </nav>
-);
-
-const Footer = () => (
-  <footer className="container" style={{ padding: '4rem 0', borderTop: '1px solid #eee', marginTop: '4rem', textAlign: 'center' }}>
-    <p>© 2026 RotaBrasil - Projeto Sistemas de Informação (Web Dev)</p>
-  </footer>
-);
-
-const Explorar = () => <div className="container"><h1>Página Explorar</h1></div>;
-const Login = () => <div className="container"><h1>Página de Login</h1></div>;
+const Explorar = () => <div className="container" style={{ minHeight: '60vh', paddingTop: '5rem' }}><h1>Página Explorar (Em breve)</h1></div>;
+const Login = () => <div className="container" style={{ minHeight: '60vh', paddingTop: '5rem' }}><h1>Página de Login (Em breve)</h1></div>;
 
 function App() {
   return (

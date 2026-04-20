@@ -2,6 +2,8 @@ import React from 'react';
 import { Map, ArrowRight, TreePine, Waves, Mountain } from 'lucide-react';
 import { destinos } from '../data/destinos';
 
+import CardDestino from '../components/CardDestino';
+
 function Home() {
   return (
     <>
@@ -39,15 +41,7 @@ function Home() {
         <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>Explore os Destinos</h2>
         <div className="destinos-grid">
           {destinos.map((dest) => (
-            <div key={dest.id} className="destino-card">
-              <img src={dest.imagem} alt={dest.nome} className="destino-img" />
-              <div className="destino-info">
-                <span className="destino-estado">{dest.estado} • {dest.bioma}</span>
-                <h3 className="destino-nome">{dest.nome}</h3>
-                <p style={{ color: '#64748b', margin: '1rem 0' }}>{dest.descricao}</p>
-                <div>{dest.tags.map(t => <span key={t} className="tag">{t}</span>)}</div>
-              </div>
-            </div>
+            <CardDestino key={dest.id} destino={dest} />
           ))}
         </div>
       </section>
