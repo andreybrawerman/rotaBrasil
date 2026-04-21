@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Map, ArrowRight, TreePine, Waves, Mountain } from 'lucide-react';
 import { destinos } from '../data/destinos';
 
@@ -10,9 +11,14 @@ function Home() {
       <main className="container hero">
         <h1>A imensidão <br /><span>que é nossa.</span></h1>
         <p>Explore parques nacionais e tesouros escondidos do Brasil com uma experiência visual definitiva.</p>
-        <div style={{ display: 'flex', gap: '1rem' }}>
-          <button className="btn-primary" style={{ padding: '1rem 2rem' }}>Explorar Mapa</button>
-          <button className="btn-secondary">Ver Destinos <ArrowRight size={20} /></button>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <Link to="/explorar" className="btn-primary" style={{ padding: '1rem 2rem', textDecoration: 'none' }}>
+            Explorar Mapa
+          </Link>
+
+          <a href="#destinos" className="btn-secondary" style={{ textDecoration: 'none' }}>
+            Ver Destinos <ArrowRight size={20} />
+          </a>
         </div>
       </main>
 

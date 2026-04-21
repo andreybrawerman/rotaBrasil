@@ -6,20 +6,21 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
-
-const Explorar = () => <div className="container" style={{ minHeight: '60vh', paddingTop: '5rem' }}><h1>Página Explorar (Em breve)</h1></div>;
-const Login = () => <div className="container" style={{ minHeight: '60vh', paddingTop: '5rem' }}><h1>Página de Login (Em breve)</h1></div>;
+import Explorar from './pages/Explorar';
+import Login from './pages/Login';
+import Cadastro from './pages/Cadastro';
 
 function App() {
   return (
     <Router>
       <div className="app-wrapper">
         <Navbar />
-        
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explorar" element={<Explorar />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/cadastro" element={<Cadastro />} />
         </Routes>
 
         <Footer />
