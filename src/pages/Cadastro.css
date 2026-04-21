@@ -77,3 +77,9 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+.erro {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}

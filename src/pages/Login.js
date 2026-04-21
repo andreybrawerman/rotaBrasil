@@ -38,7 +38,7 @@ function Login() {
         </form>
 
         <p className="auth-footer-text">
-          Ainda não tem conta? <Link to="/cadastro">Criar cadastro</Link>
+          Ainda não tem conta? <Link to="/cadastro">Cadastrar-se</Link>
         </p>
       </section>
     </main>
