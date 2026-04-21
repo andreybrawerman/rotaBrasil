@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Map, ArrowRight, TreePine, Waves, Mountain } from 'lucide-react';
 import { destinos } from '../data/destinos';
+import './Home.css';
 
 import CardDestino from '../components/CardDestino';
 
@@ -39,6 +40,27 @@ function Home() {
           <div className="bento-card bg-light-blue col-span-2">
             <div style={{ background: 'white', padding: '4px 12px', borderRadius: '20px', width: 'fit-content', fontWeight: 'bold', fontSize: '12px' }}>NOVO</div>
             <div><h3>Pantanal</h3><p>A maior planície alagada do planeta.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container beneficios-section">
+        <h2 className="beneficios-title">Por que viajar com a RotaBrasil?</h2>
+
+        <div className="beneficios-grid">
+          <div className="beneficio-card">
+            <h3>Exploração completa</h3>
+            <p>Descubra destinos únicos em todo o Brasil, dos mais famosos aos escondidos.</p>
+          </div>
+
+          <div className="beneficio-card">
+            <h3>Experiência visual</h3>
+            <p>Navegue por paisagens incríveis com uma interface moderna e intuitiva.</p>
+          </div>
+
+          <div className="beneficio-card">
+            <h3>Descoberta inteligente</h3>
+            <p>Encontre lugares perfeitos com base em biomas, atividades e preferências.</p>
           </div>
         </div>
       </section>

@@ -1,0 +1,203 @@
+.hero {
+  padding: 5rem 0;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  font-weight: 900;
+  line-height: 0.95;
+  color: var(--bm-dark-green);
+  letter-spacing: -3px;
+}
+
+.hero h1 span {
+  color: var(--bm-teal);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #475569;
+  margin: 2rem 0;
+}
+
+/* BENTO GRID */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: 280px;
+}
+
+.bento-card {
+  border-radius: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.bento-card:hover {
+  transform: scale(1.02);
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.bg-light-green {
+  background-color: var(--bm-light-green);
+  color: var(--bm-dark-green);
+}
+
+.bg-teal {
+  background-color: var(--bm-teal);
+  color: white;
+}
+
+.bg-muted-green {
+  background-color: var(--bm-muted-green);
+  color: white;
+}
+
+.bg-light-blue {
+  background-color: var(--bm-light-blue);
+  color: var(--bm-dark-green);
+}
+
+/* BENEFÍCIOS */
+.beneficios-section {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.beneficios-title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: var(--bm-dark-green);
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.beneficio-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid #edf2f7;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+  transition: 0.2s;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-5px);
+}
+
+.beneficio-card h3 {
+  margin-bottom: 1rem;
+  color: var(--bm-teal);
+}
+
+.beneficio-card p {
+  color: #64748b;
+}
+
+/* DESTINOS */
+.destinos-section {
+  padding: 5rem 0;
+}
+
+.destinos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.destino-card {
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid #edf2f7;
+}
+
+.destino-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.destino-info {
+  padding: 1.5rem;
+}
+
+.destino-nome {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.destino-estado {
+  color: var(--bm-teal);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.tag {
+  background: var(--bg-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* RESPONSIVIDADE DA HOME */
+@media (max-width: 900px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-span-2 {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .destinos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destino-img {
+    height: 200px;
+  }
+}
