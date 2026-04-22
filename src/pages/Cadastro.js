@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Cadastro.css';
+import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
   const [form, setForm] = useState({
@@ -68,6 +69,8 @@ function Cadastro() {
     return novosErros;
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -79,7 +82,9 @@ function Cadastro() {
     }
 
     setErrors({});
+
     alert("Cadastro realizado com sucesso!");
+    navigate("/login");
 
     console.log(form);
   };

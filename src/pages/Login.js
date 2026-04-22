@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [form, setForm] = useState({
@@ -36,6 +37,8 @@ function Login() {
     return novosErros;
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -48,7 +51,9 @@ function Login() {
 
     setErrors({});
     alert("Login realizado com sucesso")
-  
+
+    navigate("/");
+
     console.log(form);
   };
 
