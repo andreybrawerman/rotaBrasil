@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Login.css';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function Login() {
   const [form, setForm] = useState({
@@ -50,7 +51,12 @@ function Login() {
     }
 
     setErrors({});
-    alert("Login realizado com sucesso")
+    Swal.fire({
+    title: "Sucesso!",
+    text: "Login realizado com sucesso",
+    icon: "success",
+    confirmButtonText: "OK"
+    });
 
     navigate("/");
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Cadastro.css';
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function Cadastro() {
   const [form, setForm] = useState({
@@ -37,7 +38,7 @@ function Cadastro() {
     if (!/[0-9]/.test(senha)) {
       erros.push("Um número");
     }
-    if (!/[!@#$%^&*(),.?\":{}|<>]/.test(senha)) {
+    if (!/[!@#$%^&*(),.?":{}|<>]/.test(senha)) {
       erros.push("Um caractere especial");
     }
 
@@ -83,7 +84,12 @@ function Cadastro() {
 
     setErrors({});
 
-    alert("Cadastro realizado com sucesso!");
+    Swal.fire({
+    title: "Sucesso!",
+    text: "Cadastro realizado com sucesso",
+    icon: "success",
+    confirmButtonText: "OK"
+    });
     navigate("/login");
 
     console.log(form);
