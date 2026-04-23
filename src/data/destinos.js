@@ -25,5 +25,32 @@ export const destinos = [
     descricao: 'Montanhas imponentes, cavernas misteriosas e cachoeiras de tirar o fôlego.',
     imagem: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Parque_Nacional_Chapada_Diamantina_Rafael_Cristo_Watanabe_04.jpg',
     tags: ['Ecoturismo', 'Aventura']
+  },
+  {
+    id: 'noronha',
+    nome: 'Fernando de Noronha',
+    estado: 'Pernambuco',
+    bioma: 'Litoral',
+    descricao: 'Arquipélago vulcânico famoso por suas praias paradisíacas, águas cristalinas e vida marinha rica.',
+    imagem: 'https://www.rodamundo.tur.br/blog/wp-content/uploads/2019/03/Ba%C3%ADa-dos-Porcos-em-Fernando-de-Noronha-rodamundo-1.jpg',
+    tags: ['Mergulho', 'Natureza Preservada']
+  },
+  {
+    id: 'ilhadomel',
+    nome: 'Ilha do Mel',
+    estado: 'Paraná',
+    bioma: 'Mata Atlântica',
+    descricao: 'Um refúgio ecológico sem carros, com praias rústicas, trilhas e o histórico Farol das Conchas.',
+    imagem: 'https://blog.123milhas.com/wp-content/uploads/2021/12/IMAGEM-01-COMO-CHEGAR-FAROL-TEM-QUE-IR-ILHA-DO-MEL-1024-X-650-123MILHAS.jpg',
+    tags: ['Praia', 'Caminhada']
+  },
+  {
+    id: 'buracodopadre',
+    nome: 'Buraco do Padre',
+    estado: 'Paraná',
+    bioma: 'Campos Gerais',
+    descricao: 'Uma furna geológica impressionante com uma cachoeira de 30 metros desaguando em seu interior.',
+    imagem: 'https://www.viagenspossiveis.com.br/wp-content/uploads/2019/01/Buraco-do-Padre-em-Ponta-Grossa-PR-1.jpg',
+    tags: ['Cachoeira', 'Geoturismo']
   }
 ];
