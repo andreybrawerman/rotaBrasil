@@ -1,0 +1,12 @@
+.explorar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 por linha */
+  gap: 2rem;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .explorar-grid {
+    grid-template-columns: 1fr; /* 1 por linha no celular */
+  }
+}

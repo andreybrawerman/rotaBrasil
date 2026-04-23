@@ -1,57 +1,53 @@
 import React from 'react';
-import './Home.css'; // reaproveitando seu CSS
+import './Home.css';
+import './Explorar.css';
+import { destinos } from '../data/destinos'; // IMPORTANTE
 
 function Explorar() {
-  const destino = {
-    nome: "Cataratas do Iguaçu",
-    estado: "Paraná",
-    bioma: "Mata Atlântica",
-    descricao:
-      "As Cataratas do Iguaçu formam o maior conjunto de quedas de água do mundo, proporcionando uma experiência única em meio à natureza exuberante.",
-    imagem:
-      "https://anvtravel.com.br/wp-content/uploads/2025/06/cataratas-do-iguacu-8.jpg.webp",
-    atividades: ["Trilhas", "Passeio de barco", "Observação da natureza"]
-  };
-
   return (
-    <main className="container" style={{ paddingTop: '5rem', minHeight: '80vh' }}>
+    <main className="container" style={{ paddingTop: '2rem'}}>
       
       <h1 style={{ fontSize: '3rem', marginBottom: '2rem' }}>
-        Destino em Destaque
+        Explore os Destinos
       </h1>
 
-      <div className="destino-card" style={{ maxWidth: '700px', margin: '0 auto' }}>
-        
-        <img
-          src={destino.imagem}
-          alt={destino.nome}
-          className="destino-img"
-        />
+      <div className="explorar-grid">
+        {destinos.map((dest) => (
+          <div key={dest.id} className="destino-card">
+            
+            <img
+              src={dest.imagem}
+              alt={dest.nome}
+              className="destino-img"
+            />
 
-        <div className="destino-info">
-          <span className="destino-estado">
-            {destino.estado} • {destino.bioma}
-          </span>
-
-          <h2 className="destino-nome">{destino.nome}</h2>
-
-          <p style={{ color: '#64748b', margin: '1rem 0' }}>
-            {destino.descricao}
-          </p>
-
-          <div style={{ marginBottom: '1rem' }}>
-            {destino.atividades.map((atividade, index) => (
-              <span key={index} className="tag">
-                {atividade}
+            <div className="destino-info">
+              <span className="destino-estado">
+                {dest.estado} • {dest.bioma}
               </span>
-            ))}
-          </div>
 
-          <button className="btn-primary">
-            Planejar Viagem
-          </button>
-        </div>
+              <h2 className="destino-nome">{dest.nome}</h2>
+
+              <p style={{ color: '#64748b', margin: '1rem 0' }}>
+                {dest.descricao}
+              </p>
+
+              <div>
+                {dest.tags.map((tag, index) => (
+                  <span key={index} className="tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <button className="btn-primary" style={{ marginTop: '1rem' }}>
+                Planejar Viagem
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
+
     </main>
   );
 }
