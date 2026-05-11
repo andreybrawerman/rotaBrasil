@@ -38,7 +38,7 @@ export const destinos: Destino[] = [
     bioma: 'Mata Atlântica',
     descricao: 'O maior conjunto de quedas de água do mundo, cercado por floresta tropical.',
     imagem: 'https://anvtravel.com.br/wp-content/uploads/2025/06/cataratas-do-iguacu-8.jpg.webp',
-    tags: ['Trilha', 'Barco'],
+    tags: ['Trilha', 'Barco', 'Natureza'],
   },
   {
     id: 'chapada',

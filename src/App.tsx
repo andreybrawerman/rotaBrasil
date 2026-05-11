@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Explorar from './pages/Explorar'
 import Login from './pages/Login'
 import Cadastro from './pages/Cadastro'
+import DestinoDetalhe from './pages/DestinoDetalhe'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/explorar" element={<Explorar />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/destino/:id" element={<DestinoDetalhe />} />
         </Routes>
 
         <Footer />

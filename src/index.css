@@ -1,15 +1,14 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800;900&display=swap');
+@import "tailwindcss";
 
 @theme {
-  --color-bm-dark-green: #485C11;
-  --color-bm-muted-green: #8E9C78;
-  --color-bm-light-green: #DFECC6;
-  --color-bm-teal: #549E9C;
-  --color-bm-light-blue: #CCE5F2;
+  --color-bm-dark-green: #064e3b;
+  --color-bm-muted-green: #115e59;
+  --color-bm-light-green: #dcfce7;
+  --color-bm-teal: #0d9488;
+  --color-bm-light-blue: #e0f2fe;
   --color-bg: #F8F9FA;
   --color-text-main: #0f172a;
-
   --font-sans: 'Plus Jakarta Sans', sans-serif;
 }
 
