@@ -58,51 +58,52 @@ function Cadastro() {
     navigate('/login')
   }
 
-  const inputClass = "w-full px-4 py-[0.95rem] border border-[#dbe2ea] rounded-[0.9rem] text-base outline-none focus:border-[color:var(--color-bm-teal)] focus:shadow-[0_0_0_3px_rgba(84,158,156,0.15)] font-[family-name:var(--font-sans)]"
+  const inputClass = "w-full px-[1rem] py-[0.95rem] border border-[#dbe2ea] rounded-[0.9rem] text-[1rem] outline-none focus:border-[color:var(--color-bm-teal)] focus:shadow-[0_0_0_3px_rgba(84,158,156,0.15)] font-[family-name:var(--font-sans)]"
 
   return (
-    <main className="max-w-6xl mx-auto px-8 min-h-[70vh] flex items-center justify-center py-16">
-      <section className="w-full max-w-[480px] bg-white border border-gray-200 rounded-[2rem] p-10 shadow-sm">
-        <div className="text-center mb-8">
-          <h1 className="text-[2.2rem] font-black text-[color:var(--color-bm-dark-green)] m-0">Criar Conta</h1>
-          <p className="mt-3 text-slate-500">Cadastre-se para começar a explorar o Brasil.</p>
+    <main className="w-full max-w-[1200px] mx-auto px-8 min-h-[70vh] flex items-center justify-center py-[4rem]">
+      
+      <section className="w-full max-w-[480px] bg-white border border-[#e5e7eb] rounded-[2rem] p-[2.5rem] shadow-[0_10px_30px_rgba(0,0,0,0.04)]">
+        <div className="text-center mb-[2rem]">
+          <h1 className="text-[2.2rem] text-[color:var(--color-bm-dark-green)] m-0">Criar Conta</h1>
+          <p className="mt-[0.8rem] text-[#64748b]">Cadastre-se para começar a explorar o Brasil.</p>
         </div>
 
-        <form className="flex flex-col gap-5" onSubmit={handleSubmit} noValidate>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="nome" className="font-bold">Nome</label>
+        <form className="flex flex-col gap-[1.2rem]" onSubmit={handleSubmit} noValidate>
+          <div className="flex flex-col gap-[0.5rem]">
+            <label htmlFor="nome" className="font-bold text-[color:var(--color-text-main)]">Nome</label>
             <input type="text" id="nome" name="nome" value={form.nome} onChange={handleChange} placeholder="Seu nome completo" className={inputClass} />
-            {errors.nome && <span className="text-red-500 text-sm">{errors.nome}</span>}
+            {errors.nome && <span className="text-red-500 text-[0.9rem] mt-[5px]">{errors.nome}</span>}
           </div>
 
-          <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="font-bold">E-mail</label>
+          <div className="flex flex-col gap-[0.5rem]">
+            <label htmlFor="email" className="font-bold text-[color:var(--color-text-main)]">E-mail</label>
             <input type="email" id="email" name="email" value={form.email} onChange={handleChange} placeholder="Seu e-mail" className={inputClass} />
-            {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
+            {errors.email && <span className="text-red-500 text-[0.9rem] mt-[5px]">{errors.email}</span>}
           </div>
 
-          <div className="flex flex-col gap-2">
-            <label htmlFor="senha" className="font-bold">Senha</label>
+          <div className="flex flex-col gap-[0.5rem]">
+            <label htmlFor="senha" className="font-bold text-[color:var(--color-text-main)]">Senha</label>
             <input type="password" id="senha" name="senha" value={form.senha} onChange={handleChange} placeholder="Crie uma senha" className={inputClass} />
             {errors.senha && (
-              <ul className="text-red-500 text-sm pl-4 mt-1">
+              <ul className="text-red-500 text-[0.9rem] pl-4 mt-[5px]">
                 {errors.senha.map((erro, i) => <li key={i}>{erro}</li>)}
               </ul>
             )}
           </div>
 
-          <div className="flex flex-col gap-2">
-            <label htmlFor="confirmar-senha" className="font-bold">Confirmar Senha</label>
+          <div className="flex flex-col gap-[0.5rem]">
+            <label htmlFor="confirmar-senha" className="font-bold text-[color:var(--color-text-main)]">Confirmar Senha</label>
             <input type="password" id="confirmar-senha" name="confirmarSenha" value={form.confirmarSenha} onChange={handleChange} placeholder="Confirme sua senha" className={inputClass} />
-            {errors.confirmarSenha && <span className="text-red-500 text-sm">{errors.confirmarSenha}</span>}
+            {errors.confirmarSenha && <span className="text-red-500 text-[0.9rem] mt-[5px]">{errors.confirmarSenha}</span>}
           </div>
 
-          <button type="submit" className="w-full mt-2 py-4 bg-[color:var(--color-bm-dark-green)] text-white rounded-full font-bold hover:opacity-90 transition-opacity cursor-pointer border-none">
+          <button type="submit" className="w-full mt-[0.5rem] p-[1rem] bg-[color:var(--color-bm-dark-green)] text-white rounded-full font-bold hover:opacity-90 transition-opacity cursor-pointer border-none flex items-center justify-center">
             Criar Conta
           </button>
         </form>
 
-        <p className="text-center mt-6 text-slate-500">
+        <p className="text-center mt-[1.5rem] text-[#475569]">
           Já tem conta?{' '}
           <Link to="/login" className="text-[color:var(--color-bm-teal)] font-bold no-underline">Entrar</Link>
         </p>

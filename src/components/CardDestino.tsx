@@ -7,51 +7,34 @@ interface Props {
 
 const CardDestino = ({ destino }: Props) => {
   return (
-    // Adicione w-full junto com o h-full e o flex-col
-    <div className="flex flex-col h-full w-full bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-md transition-all duration-200 text-left">
-      
+    <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
       <img
         src={destino.imagem}
         alt={destino.nome}
-        className="w-full h-[240px] object-cover"
+        className="w-full h-60 object-cover"
       />
-      
-      {/* flex-1 permite que esta área cresça e ocupe o espaço restante do card */}
-      <div className="flex flex-col flex-1 p-8">
-        
-        <span className="text-[#549E9C] font-black text-xs uppercase tracking-wider mb-2">
+      <div className="p-6">
+        <span className="text-[color:var(--color-bm-teal)] font-bold text-xs uppercase tracking-wide">
           {destino.estado} • {destino.bioma}
         </span>
-        
-        {/* Cor verde escura adicionada para igualar à foto original */}
-        <h3 className="text-[1.5rem] text-[#485C11] font-black mt-1 mb-3">
-          {destino.nome}
-        </h3>
-        
-        <p className="text-[#64748b] mb-6">
-          {destino.descricao}
-        </p>
-        
-        {/* content-start e flex-1 empurram as tags para cima e deixam o link preso embaixo */}
-        <div className="flex flex-wrap content-start gap-2 mb-6 flex-1">
+        <h3 className="text-2xl font-extrabold mt-1 mb-3 text-[#485C11]">{destino.nome}</h3>
+        <p className="text-slate-500 text-sm mb-4">{destino.descricao}</p>
+        <div className="flex flex-wrap gap-2 mb-4">
           {destino.tags.map((tag) => (
             <span
               key={tag}
-              className="bg-slate-100 text-slate-600 text-[0.75rem] font-bold px-3 py-1 rounded-full"
+              className="bg-[color:var(--color-bg)] text-xs font-bold px-3 py-1 rounded-full"
             >
               {tag}
             </span>
           ))}
         </div>
-
-        {/* mt-auto é o truque mágico: ele empurra o link "Ver destino" para o rodapé exato do card */}
         <Link
           to={`/destino/${destino.id}`}
-          className="mt-auto font-black text-[#549E9C] no-underline hover:opacity-80 transition-opacity"
+          className="font-black text-[#549E9C] no-underline hover:underline"
         >
           Ver destino
         </Link>
-        
       </div>
     </div>
   )

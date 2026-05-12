@@ -47,7 +47,7 @@ function Login() {
     <main className="max-w-6xl mx-auto px-8 min-h-[70vh] flex items-center justify-center py-16">
       <section className="w-full max-w-[480px] bg-white border border-gray-200 rounded-[2rem] p-10 shadow-sm">
         <div className="text-center mb-8">
-          <h1 className="text-[2.2rem] font-black text-[color:var(--color-bm-dark-green)] m-0">Entrar</h1>
+          <h1 className="text-[2.2rem] text-[color:var(--color-bm-dark-green)] m-0">Entrar</h1>
           <p className="mt-3 text-[#3b434d]">Acesse sua conta para planejar suas viagens pelo Brasil.</p>
         </div>
 
