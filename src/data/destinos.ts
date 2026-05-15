@@ -34,7 +34,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Amazônia",
     "descricao": "Floresta amazônica, rios e montanhas em uma das áreas mais preservadas do Acre.",
     "sobre": "Parque Nacional da Serra do Divisor é um destino de destaque em Acre, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?parque,nacional,da,serra,do,divisor,brasil,turismo",
+    "imagem": "https://amazoniareal.com.br/wp-content/uploads/2022/05/Serra-do-Divisor-possui-ecossistemas-raros-%C2%A9-Foto-Acre-ao-VivoDivulgac%CC%A7a%CC%80o.jpeg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?parque,nacional,da,serra,do,divisor,paisagem",
       "https://source.unsplash.com/1200x800/?cruzeiro,do,sul,brasil",
@@ -160,7 +160,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Litoral",
     "descricao": "Praias de águas claras e piscinas naturais conhecidas como galés no litoral norte alagoano.",
     "sobre": "Maragogi é um destino de destaque em Alagoas, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?maragogi,brasil,turismo",
+    "imagem": "https://www.melhoresdestinos.com.br/wp-content/uploads/2021/04/maragogi-capa-03.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?maragogi,paisagem",
       "https://source.unsplash.com/1200x800/?maragogi,brasil",
@@ -244,7 +244,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Litoral",
     "descricao": "Cidade histórica às margens do Rio São Francisco, próxima aos cânions navegáveis do Xingó.",
     "sobre": "Piranhas e Cânions do Xingó é um destino de destaque em Alagoas, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?piranhas,e,canions,do,xingo,brasil,turismo",
+    "imagem": "https://vidacigana.com/wp-content/uploads/2017/02/passeio-canion-do-xingo-1.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?piranhas,e,canions,do,xingo,paisagem",
       "https://source.unsplash.com/1200x800/?piranhas,brasil",
@@ -286,7 +286,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Amazônia",
     "descricao": "Capital cortada pela Linha do Equador, com fortaleza histórica, orla e cultura amazônica.",
     "sobre": "Macapá e Marco Zero é um destino de destaque em Amapá, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?macapa,e,marco,zero,brasil,turismo",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/d/de/Marco_Zero_do_Equador%2C_Macap%C3%A1_AP_2.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?macapa,e,marco,zero,paisagem",
       "https://source.unsplash.com/1200x800/?macapa,brasil",
@@ -538,7 +538,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Caatinga",
     "descricao": "Região de cachoeiras, grutas, trilhas, poços cristalinos e montanhas no interior da Bahia.",
     "sobre": "Chapada Diamantina é um destino de destaque em Bahia, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?chapada,diamantina,brasil,turismo",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/8/84/Parque_Nacional_Chapada_Diamantina_Rafael_Cristo_Watanabe_04.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
     "galeria": [
       "https://source.unsplash.com/1200x800/?chapada,diamantina,paisagem",
       "https://source.unsplash.com/1200x800/?lencois,brasil",
@@ -622,7 +622,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Caatinga",
     "descricao": "Destino litorâneo com praias, falésias, centro histórico e vida noturna no sul da Bahia.",
     "sobre": "Porto Seguro e Arraial d'Ajuda é um destino de destaque em Bahia, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?porto,seguro,e,arraial,d,ajuda,brasil,turismo",
+    "imagem": "https://www.dicasdeviagem.com/wp-content/uploads/2019/04/arraial-dajuda-aerea.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?porto,seguro,e,arraial,d,ajuda,paisagem",
       "https://source.unsplash.com/1200x800/?porto,seguro,brasil",
@@ -664,7 +664,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Litoral e Caatinga",
     "descricao": "Vila cercada por dunas, lagoas, praias e pôr do sol famoso no litoral oeste do Ceará.",
     "sobre": "Jericoacoara é um destino de destaque em Ceará, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?jericoacoara,brasil,turismo",
+    "imagem": "https://prefiroviajar.com.br/wp-content/uploads/2016/12/jeriquaquara-jericoacoara.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?jericoacoara,paisagem",
       "https://source.unsplash.com/1200x800/?jijoca,de,jericoacoara,brasil",
@@ -748,7 +748,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Litoral e Caatinga",
     "descricao": "Praia com falésias coloridas, jangadas, dunas e clima descontraído no litoral leste cearense.",
     "sobre": "Canoa Quebrada é um destino de destaque em Ceará, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?canoa,quebrada,brasil,turismo",
+    "imagem": "https://media-cdn.tripadvisor.com/media/photo-c/1280x250/09/ab/43/3d/praia-de-canoa-quebrada.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?canoa,quebrada,paisagem",
       "https://source.unsplash.com/1200x800/?aracati,brasil",
@@ -832,7 +832,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Cerrado",
     "descricao": "Área de cerrado preservado com piscinas naturais, trilhas e contato com fauna e flora locais.",
     "sobre": "Parque Nacional de Brasília é um destino de destaque em Distrito Federal, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Centro-Oeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?parque,nacional,de,brasilia,brasil,turismo",
+    "imagem": "https://viagemeturismo.abril.com.br/wp-content/uploads/2024/09/parque-nacional-brasilia-parna.jpeg?quality=70&strip=info&resize=1080,565&crop=1",
     "galeria": [
       "https://source.unsplash.com/1200x800/?parque,nacional,de,brasilia,paisagem",
       "https://source.unsplash.com/1200x800/?brasilia,brasil",
@@ -958,7 +958,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Litoral",
     "descricao": "Região serrana com formações rochosas, trilhas, clima ameno e turismo de montanha.",
     "sobre": "Pedra Azul é um destino de destaque em Espírito Santo, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?pedra,azul,brasil,turismo",
+    "imagem": "https://www.viagenscinematograficas.com.br/wp-content/uploads/2018/07/Pedra-Azul-Rota-do-Lagarto-ES-shutterstock_1119002801.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?pedra,azul,paisagem",
       "https://source.unsplash.com/1200x800/?domingos,martins,brasil",
@@ -1000,7 +1000,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Litoral",
     "descricao": "Destino de praia famoso por enseadas, areia monazítica, mergulho e estrutura turística.",
     "sobre": "Guarapari é um destino de destaque em Espírito Santo, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?guarapari,brasil,turismo",
+    "imagem": "https://www.zapimoveis.com.br/blog/wp-content/uploads/2025/09/melhores-praias-de-guarapari-capa.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?guarapari,paisagem",
       "https://source.unsplash.com/1200x800/?guarapari,brasil",
@@ -1042,7 +1042,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Cerrado",
     "descricao": "Parque e região com cachoeiras, cânions, trilhas e paisagens do cerrado rupestre.",
     "sobre": "Chapada dos Veadeiros é um destino de destaque em Goiás, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Centro-Oeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?chapada,dos,veadeiros,brasil,turismo",
+    "imagem": "https://aem-all.accor.com/content/dam/all/hubs/americas/latam/generic-images/all-magazine/chapada-dos-veadeiros-guia-de-viagem-2024-1.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?chapada,dos,veadeiros,paisagem",
       "https://source.unsplash.com/1200x800/?alto,paraiso,de,goias,brasil",
@@ -1126,7 +1126,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Cerrado",
     "descricao": "Destino conhecido pelas águas termais, parques aquáticos e lazer para famílias.",
     "sobre": "Caldas Novas é um destino de destaque em Goiás, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Centro-Oeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?caldas,novas,brasil,turismo",
+    "imagem": "https://blog.buson.com.br/wp-content/uploads/2024/12/caldas-novas-quando-ir-o-que-fazer-1024x636.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?caldas,novas,paisagem",
       "https://source.unsplash.com/1200x800/?caldas,novas,brasil",
@@ -1168,7 +1168,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Litoral e Cerrado",
     "descricao": "Dunas de areia branca pontilhadas por lagoas de água doce cristalina.",
     "sobre": "Lençóis Maranhenses é um destino de destaque em Maranhão, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?lencois,maranhenses,brasil,turismo",
+    "imagem": "https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2025/08/d801f0af-cf69-462c-8e33-0ecc5376bfb7.jpg-94.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?lencois,maranhenses,paisagem",
       "https://source.unsplash.com/1200x800/?barreirinhas,brasil",
@@ -1294,7 +1294,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Pantanal, Cerrado e Amazônia",
     "descricao": "Destino de cerrado com cachoeiras, paredões, mirantes e trilhas perto de Cuiabá.",
     "sobre": "Chapada dos Guimarães é um destino de destaque em Mato Grosso, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Centro-Oeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?chapada,dos,guimaraes,brasil,turismo",
+    "imagem": "https://desviantes.blob.core.windows.net/desviantes/media/adventures/items/d97633e0e43971ac2cefbf1c04a6d267.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?chapada,dos,guimaraes,paisagem",
       "https://source.unsplash.com/1200x800/?chapada,dos,guimaraes,brasil",
@@ -1378,7 +1378,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Pantanal, Cerrado e Amazônia",
     "descricao": "Destino de rios cristalinos, flutuação, cachoeiras e cavernas no interior mato-grossense.",
     "sobre": "Nobres é um destino de destaque em Mato Grosso, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Centro-Oeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?nobres,brasil,turismo",
+    "imagem": "https://lalarebelo.com/wp-content/uploads/2019/08/IMG_1252-baixa.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?nobres,paisagem",
       "https://source.unsplash.com/1200x800/?nobres,brasil",
@@ -1630,7 +1630,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Cerrado e Mata Atlântica",
     "descricao": "Região de campos rupestres, cachoeiras, trilhas e biodiversidade na Serra do Espinhaço.",
     "sobre": "Serra do Cipó é um destino de destaque em Minas Gerais, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?serra,do,cipo,brasil,turismo",
+    "imagem": "https://blog.maxmilhas.com.br/wp-content/uploads/2020/02/shutterstock_1474581683-1024x687.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?serra,do,cipo,paisagem",
       "https://source.unsplash.com/1200x800/?santana,do,riacho,brasil",
@@ -1756,7 +1756,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Amazônia",
     "descricao": "Maior ilha fluviomarinha do Brasil, com búfalos, praias, campos alagados e cultura marajoara.",
     "sobre": "Ilha do Marajó é um destino de destaque em Pará, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?ilha,do,marajo,brasil,turismo",
+    "imagem": "https://ogimg.infoglobo.com.br/in/18160691-848-46e/FT1086A/760/2015-864114368-266.jpg_20151105.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?ilha,do,marajo,paisagem",
       "https://source.unsplash.com/1200x800/?soure,brasil",
@@ -1924,7 +1924,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Campos Gerais",
     "descricao": "Conjunto monumental de quedas d’água cercado por floresta tropical.",
     "sobre": "Cataratas do Iguaçu é um destino de destaque em Paraná, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sul.",
-    "imagem": "https://source.unsplash.com/1200x800/?cataratas,do,iguacu,brasil,turismo",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Iguazu_Cataratas2.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?cataratas,do,iguacu,paisagem",
       "https://source.unsplash.com/1200x800/?foz,do,iguacu,brasil",
@@ -1966,7 +1966,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Campos Gerais",
     "descricao": "Refúgio ecológico sem carros, com praias rústicas, trilhas e o Farol das Conchas.",
     "sobre": "Ilha do Mel é um destino de destaque em Paraná, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sul.",
-    "imagem": "https://source.unsplash.com/1200x800/?ilha,do,mel,brasil,turismo",
+    "imagem": "https://blog.123milhas.com/wp-content/uploads/2021/12/IMAGEM-01-COMO-CHEGAR-FAROL-TEM-QUE-IR-ILHA-DO-MEL-1024-X-650-123MILHAS.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?ilha,do,mel,paisagem",
       "https://source.unsplash.com/1200x800/?paranagua,brasil",
@@ -2008,7 +2008,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Campos Gerais",
     "descricao": "Furna geológica com cachoeira em seu interior, trilhas e paisagens dos Campos Gerais.",
     "sobre": "Buraco do Padre é um destino de destaque em Paraná, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sul.",
-    "imagem": "https://source.unsplash.com/1200x800/?buraco,do,padre,brasil,turismo",
+    "imagem": "https://www.viagenspossiveis.com.br/wp-content/uploads/2019/01/Buraco-do-Padre-em-Ponta-Grossa-PR-1.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?buraco,do,padre,paisagem",
       "https://source.unsplash.com/1200x800/?ponta,grossa,brasil",
@@ -2050,7 +2050,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Litoral e Caatinga",
     "descricao": "Arquipélago vulcânico com praias preservadas, águas cristalinas e rica vida marinha.",
     "sobre": "Fernando de Noronha é um destino de destaque em Pernambuco, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?fernando,de,noronha,brasil,turismo",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/9/91/EDUARDO_MURUCI_-_BAIA_DOS_PORCOS-%28recorte%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
     "galeria": [
       "https://source.unsplash.com/1200x800/?fernando,de,noronha,paisagem",
       "https://source.unsplash.com/1200x800/?fernando,de,noronha,brasil",
@@ -2092,7 +2092,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Litoral e Caatinga",
     "descricao": "Praia famosa por piscinas naturais, jangadas, arrecifes e estrutura turística no litoral sul.",
     "sobre": "Porto de Galinhas é um destino de destaque em Pernambuco, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?porto,de,galinhas,brasil,turismo",
+    "imagem": "https://ipojuca.pe.gov.br/wp-content/uploads/2025/03/porto-de-galinhas.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?porto,de,galinhas,paisagem",
       "https://source.unsplash.com/1200x800/?ipojuca,brasil",
@@ -2344,7 +2344,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Litoral",
     "descricao": "Cidade histórica colonial entre montanhas e mar, com ilhas, cachoeiras e centro preservado.",
     "sobre": "Paraty é um destino de destaque em Rio de Janeiro, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?paraty,brasil,turismo",
+    "imagem": "https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2026/02/aaa-2026-02-11T014221.138.png",
     "galeria": [
       "https://source.unsplash.com/1200x800/?paraty,paisagem",
       "https://source.unsplash.com/1200x800/?paraty,brasil",
@@ -2386,7 +2386,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica e Litoral",
     "descricao": "Balneário com diversas praias, orla charmosa, passeios de barco e gastronomia.",
     "sobre": "Búzios é um destino de destaque em Rio de Janeiro, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?buzios,brasil,turismo",
+    "imagem": "https://cdn.sanity.io/images/nxpteyfv/goguides/eaad4b7b87410c710448027b5898f1871ee726ae-1600x1066.jpg",
     "galeria": [
       "https://source.unsplash.com/1200x800/?buzios,paisagem",
       "https://source.unsplash.com/1200x800/?armacao,dos,buzios,brasil",
@@ -3142,7 +3142,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Mata Atlântica, Serra e Litoral",
     "descricao": "Arquipélago com praias, trilhas, cachoeiras, vela e áreas preservadas de Mata Atlântica.",
     "sobre": "Ilhabela é um destino de destaque em São Paulo, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?ilhabela,brasil,turismo",
+    "imagem": "https://i0.wp.com/alemaobeachilhabela.com.br/wp-content/uploads/2023/01/g.jpeg?fit=1024%2C682&ssl=1",
     "galeria": [
       "https://source.unsplash.com/1200x800/?ilhabela,paisagem",
       "https://source.unsplash.com/1200x800/?ilhabela,brasil",

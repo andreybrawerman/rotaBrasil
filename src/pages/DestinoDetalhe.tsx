@@ -30,6 +30,13 @@ import {
   type FeriadoNacional,
 } from '../services/brasilApiService'
 
+interface Avaliacao {
+  id: number;
+  nome: string;
+  comentario: string;
+  data: string;
+}
+
 function DestinoDetalhe() {
   const { id } = useParams<{ id: string }>()
   const destino = destinos.find((item) => item.id === id)
@@ -45,6 +52,34 @@ function DestinoDetalhe() {
   const [atracoes, setAtracoes] = useState<AtracaoProxima[]>([])
   const [carregandoAtracoes, setCarregandoAtracoes] = useState(false)
   const [erroAtracoes, setErroAtracoes] = useState('')
+
+  const [avaliacoes, setAvaliacoes] = useState<Avaliacao[]>([
+    {
+      id: 1,
+      nome: 'Maria Silva',
+      comentario: 'Lugar incrível! Toda família e amigos podem se divertir aqui.',
+      data: 'Há 2 dias'
+    }
+  ]);
+  const [nomeInput, setNomeInput] = useState('');
+  const [comentarioInput, setComentarioInput] = useState('');
+
+  const handleAdicionarAvaliacao = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!nomeInput.trim() || !comentarioInput.trim()) return;
+
+    const novaAvaliacao: Avaliacao = {
+      id: Date.now(),
+      nome: nomeInput,
+      comentario: comentarioInput,
+      data: 'Agora mesmo'
+    };
+
+    setAvaliacoes([novaAvaliacao, ...avaliacoes]);
+    setNomeInput('');
+    setComentarioInput('');
+  };
 
   useEffect(() => {
     async function carregarClima() {
@@ -319,6 +354,61 @@ function DestinoDetalhe() {
               </div>
             </div>
           )}
+          {/* Seção de Avaliações Funcional */}
+          <div className="rounded-[2rem] border border-slate-100 bg-white p-8 shadow-sm">
+            <div className="mb-6 flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#DFECC6] text-[#485C11]">
+                <Users size={24} />
+              </div>
+              <h2 className="text-3xl font-black text-[#485C11]">
+                Avaliações da Comunidade
+              </h2>
+            </div>
+            
+            <form className="mb-8 space-y-4" onSubmit={handleAdicionarAvaliacao}>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <label className="mb-2 block text-sm font-bold text-slate-500">Seu nome</label>
+                  <input 
+                    type="text" 
+                    value={nomeInput}
+                    onChange={(e) => setNomeInput(e.target.value)}
+                    placeholder="Ex: João"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 p-4 outline-none focus:border-[#549E9C] focus:ring-2 focus:ring-[#549E9C]/20 transition-all"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="mb-2 block text-sm font-bold text-slate-500">Sua experiência</label>
+                <textarea 
+                  rows={3}
+                  value={comentarioInput}
+                  onChange={(e) => setComentarioInput(e.target.value)}
+                  placeholder="Compartilhe suas dicas sobre este destino..."
+                  className="w-full resize-none rounded-xl border border-slate-200 bg-slate-50 p-4 outline-none focus:border-[#549E9C] focus:ring-2 focus:ring-[#549E9C]/20 transition-all"
+                ></textarea>
+              </div>
+              <button 
+                type="submit"
+                className="rounded-full bg-[#485C11] px-8 py-3 font-bold text-white transition hover:scale-105 active:scale-95"
+              >
+                Publicar comentário
+              </button>
+            </form>
+
+            {/* Lista Dinâmica de Comentários */}
+            <div className="space-y-4 border-t border-slate-100 pt-6">
+              {avaliacoes.map((item) => (
+                <div key={item.id} className="rounded-2xl bg-slate-50 p-5 animate-in fade-in slide-in-from-top-4 duration-500">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-black text-[#485C11]">{item.nome}</h4>
+                    <span className="text-xs font-bold text-slate-400 uppercase">{item.data}</span>
+                  </div>
+                  <p className="text-slate-600 italic">"{item.comentario}"</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Sidebar */}
