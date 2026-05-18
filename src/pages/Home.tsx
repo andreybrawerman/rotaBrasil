@@ -8,7 +8,6 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      {/* w-full força a largura máxima e text-left mata qualquer centralização global */}
       <main className="w-full max-w-[1200px] mx-auto px-8 py-20 text-left">
         <div className="max-w-[800px]">
           <h1 className="text-[5.5rem] font-black leading-[0.95] tracking-[-3px] text-[#485C11] max-md:text-[3.5rem]">
@@ -31,7 +30,6 @@ function Home() {
       </main>
 
       {/* Bento Grid */}
-      {/* w-full adicionado aqui para garantir que a grade não encolha */}
       <section className="w-full max-w-[1200px] mx-auto px-8">
         <div className="grid w-full auto-rows-[280px] grid-cols-3 gap-6 max-lg:auto-rows-auto max-lg:grid-cols-1">
           
@@ -70,22 +68,18 @@ function Home() {
         </div>
       </section>
 
-      {/* Mapa Interativo */}
       <MapaBrasilInterativo />
 
       {/* Benefícios */}
-      {/* Adicionado w-full na section */}
       <section className="w-full max-w-[1200px] mx-auto px-8 py-20 text-center">
         <h2 className="mb-12 text-[2.2rem] font-black text-[#485C11]">Por que viajar com a RotaBrasil?</h2>
         
-        {/* Adicionado w-full no grid */}
         <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
           {[
             { titulo: 'Exploração completa', texto: 'Descubra destinos únicos em todo o Brasil, dos mais famosos aos escondidos.' },
             { titulo: 'Experiência visual', texto: 'Navegue por paisagens incríveis com uma interface moderna e intuitiva.' },
             { titulo: 'Descoberta inteligente', texto: 'Encontre lugares perfeitos com base em biomas, atividades e preferências.' },
           ].map((b) => (
-            // Adicionado w-full no card de benefício para ele esticar
             <div key={b.titulo} className="w-full rounded-[1.5rem] border border-[#edf2f7] bg-white p-8 shadow-sm transition hover:-translate-y-1">
               <h3 className="mb-4 font-black text-[#549E9C]">{b.titulo}</h3>
               <p className="text-[#64748b]">{b.texto}</p>
@@ -95,15 +89,22 @@ function Home() {
       </section>
 
       {/* Destinos */}
-      {/* Adicionado w-full na section */}
       <section id="destinos" className="w-full max-w-[1200px] mx-auto px-8 py-20 text-left">
         <h2 className="mb-10 text-[2.5rem] font-black text-[#485C11]">Explore os Destinos</h2>
         
-        {/* Adicionado w-full no grid para forçar as colunas a esbarrarem nos cantos da tela */}
         <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {destinos.map((destino) => (
+          {destinos.slice(0, 6).map((destino) => (
             <CardDestino key={destino.id} destino={destino} />
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <Link
+            to="/explorar"
+            className="inline-flex items-center gap-2 rounded-full border-2 border-[#485C11] bg-transparent px-8 py-4 font-bold text-[#485C11] transition-all hover:bg-[#485C11] hover:text-white"
+          >
+            Explorar todos os destinos <ArrowRight size={20} />
+          </Link>
         </div>
       </section>
     </>

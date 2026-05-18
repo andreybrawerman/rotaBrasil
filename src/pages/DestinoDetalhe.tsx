@@ -3,7 +3,7 @@ import {
   type AtracaoProxima,
 } from '../services/openTripMapService'
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import {
   ArrowLeft,
   MapPin,
@@ -39,6 +39,7 @@ interface Avaliacao {
 
 function DestinoDetalhe() {
   const { id } = useParams<{ id: string }>()
+  const navigate = useNavigate()
   const destino = destinos.find((item) => item.id === id)
 
   const [clima, setClima] = useState<any>(null)
@@ -211,12 +212,12 @@ function DestinoDetalhe() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/10" />
 
         <div className="relative z-10 mx-auto flex min-h-[560px] max-w-7xl flex-col justify-end px-6 py-12">
-          <Link
-            to="/"
-            className="mb-8 inline-flex w-fit items-center gap-2 rounded-full bg-white/90 px-5 py-3 font-black text-[#485C11] no-underline backdrop-blur transition hover:bg-white"
+          <button
+            onClick={() => navigate(-1)}
+            className="mb-8 inline-flex w-fit cursor-pointer items-center gap-2 rounded-full border-none bg-white/90 px-5 py-3 font-black text-[#485C11] no-underline backdrop-blur transition hover:bg-white"
           >
             <ArrowLeft size={18} /> Voltar
-          </Link>
+          </button>
 
           <div className="max-w-3xl">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#DFECC6] px-4 py-2 text-sm font-black uppercase text-[#485C11]">
