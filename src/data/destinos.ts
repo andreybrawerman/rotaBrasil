@@ -61,78 +61,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "rio-branco",
-    "nome": "Rio Branco",
-    "estado": "Acre",
-    "cidade": "Rio Branco",
-    "regiao": "Norte",
-    "bioma": "Amazônia",
-    "descricao": "Capital acreana com passarelas, mercados, memória histórica e contato com a cultura amazônica.",
-    "sobre": "Rio Branco é um destino de destaque em Acre, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?rio,branco,brasil,turismo",
-    "tags": [
-      "Cultura",
-      "História",
-      "Urbano"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Rio Branco, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Rio Branco",
-      "Contato com a cultura e paisagens de Acre",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -9.97499,
-      "longitude": -67.8243
-    }
-  },
-  {
-    "id": "xapuri",
-    "nome": "Xapuri",
-    "estado": "Acre",
-    "cidade": "Xapuri",
-    "regiao": "Norte",
-    "bioma": "Amazônia",
-    "descricao": "Cidade ligada à história de Chico Mendes, seringais, comunidades tradicionais e turismo de base comunitária.",
-    "sobre": "Xapuri é um destino de destaque em Acre, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?xapuri,brasil,turismo",
-    "tags": [
-      "História",
-      "Cultura",
-      "Natureza"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Xapuri, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Xapuri",
-      "Contato com a cultura e paisagens de Acre",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -10.6516,
-      "longitude": -68.5044
-    }
-  },
-  {
     "id": "maragogi",
     "nome": "Maragogi",
     "estado": "Alagoas",
@@ -166,42 +94,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": -9.0122,
       "longitude": -35.2229
-    }
-  },
-  {
-    "id": "maceio",
-    "nome": "Maceió",
-    "estado": "Alagoas",
-    "cidade": "Maceió",
-    "regiao": "Nordeste",
-    "bioma": "Litoral",
-    "descricao": "Capital com orla urbana, jangadas, feirinhas, praias famosas e boa estrutura turística.",
-    "sobre": "Maceió é um destino de destaque em Alagoas, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?maceio,brasil,turismo",
-    "tags": [
-      "Praia",
-      "Gastronomia",
-      "Urbano"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Maceió, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Maceió",
-      "Contato com a cultura e paisagens de Alagoas",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -9.6498,
-      "longitude": -35.7089
     }
   },
   {
@@ -277,42 +169,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "oiapoque",
-    "nome": "Oiapoque",
-    "estado": "Amapá",
-    "cidade": "Oiapoque",
-    "regiao": "Norte",
-    "bioma": "Amazônia",
-    "descricao": "Destino no extremo norte do Brasil, marcado por fronteira, rios amazônicos e diversidade cultural.",
-    "sobre": "Oiapoque é um destino de destaque em Amapá, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?oiapoque,brasil,turismo",
-    "tags": [
-      "Fronteira",
-      "Rio",
-      "Cultura"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Oiapoque, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Oiapoque",
-      "Contato com a cultura e paisagens de Amapá",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": 3.8407,
-      "longitude": -51.8331
-    }
-  },
-  {
     "id": "parque-nacional-montanhas-do-tumucumaque",
     "nome": "Parque Nacional Montanhas do Tumucumaque",
     "estado": "Amapá",
@@ -346,42 +202,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": 0.8711,
       "longitude": -52.0016
-    }
-  },
-  {
-    "id": "manaus",
-    "nome": "Manaus",
-    "estado": "Amazonas",
-    "cidade": "Manaus",
-    "regiao": "Norte",
-    "bioma": "Amazônia",
-    "descricao": "Capital amazônica com Teatro Amazonas, encontro das águas, mercados e passeios pela floresta.",
-    "sobre": "Manaus é um destino de destaque em Amazonas, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?manaus,brasil,turismo",
-    "tags": [
-      "Cultura",
-      "Floresta",
-      "Rio"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Moderado",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Manaus, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Manaus",
-      "Contato com a cultura e paisagens de Amazonas",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -3.119,
-      "longitude": -60.0217
     }
   },
   {
@@ -493,39 +313,75 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "salvador",
-    "nome": "Salvador",
+    "id": "pelourinho",
+    "nome": "Pelourinho",
     "estado": "Bahia",
     "cidade": "Salvador",
     "regiao": "Nordeste",
-    "bioma": "Mata Atlântica e Caatinga",
-    "descricao": "Capital histórica com Pelourinho, praias, música, culinária baiana e forte herança afro-brasileira.",
-    "sobre": "Salvador é um destino de destaque em Bahia, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?salvador,brasil,turismo",
+    "bioma": "Mata Atlântica",
+    "descricao": "Bairro histórico com ladeiras de paralelepípedos, igrejas barrocas, casarões coloniais coloridos e rica herança afro-brasileira.",
+    "sobre": "O Pelourinho é um destino de destaque na Bahia, combinando paisagens arquitetônicas, experiências locais e atrativos culturais que representam o coração histórico e musical da região Nordeste.",
+    "imagem": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/43/ac/8f/pelourinho.jpg?w=900&h=500&s=1",
     "tags": [
       "História",
       "Cultura",
-      "Praia"
+      "Arquitetura"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Salvador, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "melhorEpoca": "De setembro a março, especialmente durante o verão e Carnaval",
+    "duracaoRecomendada": "1 a 2 dias",
+    "tipoViagem": "Cultural e histórica",
+    "nivelAcesso": "Moderado",
+    "publicoIdeal": "Apaixonados por história, cultura, música e gastronomia",
+    "comoChegar": "Acessível por transporte público, carro de aplicativo ou caminhando a partir do Elevador Lacerda no centro de Salvador.",
     "destaques": [
-      "Experiências marcantes em Salvador",
-      "Contato com a cultura e paisagens de Bahia",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Visita à Igreja e Convento de São Francisco",
+      "Ensaios de blocos afro como o Olodum",
+      "Gastronomia típica baiana nos restaurantes locais"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Use calçados confortáveis para caminhar nas ladeiras de pedra.",
+      "Evite usar objetos de valor muito chamativos.",
+      "Aproveite as terças-feiras, conhecidas pela famosa 'Terça do Pelô'."
     ],
     "localizacao": {
-      "latitude": -12.9777,
-      "longitude": -38.5016
+      "latitude": -12.9718,
+      "longitude": -38.5076
+    }
+  },
+  {
+    "id": "elevador-lacerda",
+    "nome": "Elevador Lacerda",
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "regiao": "Nordeste",
+    "bioma": "Mata Atlântica",
+    "descricao": "O primeiro elevador urbano do mundo, que liga a Cidade Baixa à Cidade Alta de Salvador com uma vista privilegiada da Baía de Todos-os-Santos.",
+    "sobre": "O Elevador Lacerda é uma obra histórica em Salvador, servindo como mirante e transporte icônico que integra o charme e a história da região Nordeste.",
+    "imagem": "https://imgmd.net/images/v1/guia/1700672/elevador-lacerda.jpg",
+    "tags": [
+      "Arquitetura",
+      "Mirante",
+      "Histórico"
+    ],
+    "melhorEpoca": "Ano todo",
+    "duracaoRecomendada": "1 a 2 horas (incluindo o entorno)",
+    "tipoViagem": "Cultural e urbana",
+    "nivelAcesso": "Fácil",
+    "publicoIdeal": "Turistas em geral, amantes de história",
+    "comoChegar": "Localizado na Praça Tomé de Sousa (Cidade Alta) ou na Praça Cairu (Cidade Baixa), acessível por ônibus e carro.",
+    "destaques": [
+      "Vista espetacular da Baía de Todos-os-Santos",
+      "Rápida transição entre as áreas históricas da cidade",
+      "Proximidade do Mercado Modelo e do Pelourinho"
+    ],
+    "dicas": [
+      "Prepare moedas para a tarifa de uso do elevador, que custa centavos.",
+      "Tire fotos na praça em frente à saída da Cidade Alta, onde a vista é livre.",
+      "Experimente o sorvete tradicional na sorveteria A Cubana logo na saída superior."
+    ],
+    "localizacao": {
+      "latitude": -12.973,
+      "longitude": -38.513
     }
   },
   {
@@ -601,39 +457,39 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "fortaleza",
-    "nome": "Fortaleza",
+    "id": "beach-park",
+    "nome": "Beach Park",
     "estado": "Ceará",
-    "cidade": "Fortaleza",
+    "cidade": "Aquiraz",
     "regiao": "Nordeste",
-    "bioma": "Litoral e Caatinga",
-    "descricao": "Capital com orla movimentada, praias urbanas, feiras, gastronomia e acesso a destinos próximos.",
-    "sobre": "Fortaleza é um destino de destaque em Ceará, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?fortaleza,brasil,turismo",
+    "bioma": "Costeiro / Vegetação de Dunas",
+    "descricao": "Enorme complexo turístico e parque aquático localizado à beira-mar, famoso por tobogãs extremos e atrações para a família toda.",
+    "sobre": "O Beach Park é um complexo imperdível no Ceará, combinando diversão aquática de alta qualidade, resorts e a bela paisagem litorânea do Nordeste.",
+    "imagem": "https://www.melhoresdestinos.com.br/wp-content/uploads/2025/10/Guia-Beach-Park-2026-imagem-aerea-geral-do-parque.jpg",
     "tags": [
-      "Praia",
-      "Gastronomia",
-      "Urbano"
+      "Parque Aquático",
+      "Diversão",
+      "Praia"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
+    "melhorEpoca": "Ano todo, pois a região tem sol constante, de preferência fora dos meses de chuva (fevereiro a maio)",
+    "duracaoRecomendada": "1 a 2 dias",
+    "tipoViagem": "Diversão e família",
     "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Fortaleza, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "publicoIdeal": "Famílias, crianças, jovens e buscadores de adrenalina",
+    "comoChegar": "Localizado em Aquiraz, a cerca de 40 minutos de carro ou transfer de Fortaleza.",
     "destaques": [
-      "Experiências marcantes em Fortaleza",
-      "Contato com a cultura e paisagens de Ceará",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Tobogã Insano, um dos mais altos e rápidos do mundo",
+      "Piscina de ondas Maremoto e Rio Lento",
+      "Estrutura na beira da Praia do Porto das Dunas"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Alugue um armário para guardar seus pertences com segurança enquanto brinca.",
+      "Passe bastante protetor solar à prova d'água.",
+      "Confira a possibilidade de pacotes de mais de um dia se estiver hospedado na região."
     ],
     "localizacao": {
-      "latitude": -3.7319,
-      "longitude": -38.5267
+      "latitude": -3.8447,
+      "longitude": -38.3886
     }
   },
   {
@@ -670,42 +526,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": -4.5252,
       "longitude": -37.7048
-    }
-  },
-  {
-    "id": "brasilia",
-    "nome": "Brasília",
-    "estado": "Distrito Federal",
-    "cidade": "Brasília",
-    "regiao": "Centro-Oeste",
-    "bioma": "Cerrado",
-    "descricao": "Capital planejada com arquitetura modernista, monumentos cívicos, museus e amplo patrimônio cultural.",
-    "sobre": "Brasília é um destino de destaque em Distrito Federal, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Centro-Oeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?brasilia,brasil,turismo",
-    "tags": [
-      "Arquitetura",
-      "História",
-      "Urbano"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Brasília, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Brasília",
-      "Contato com a cultura e paisagens de Distrito Federal",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -15.7939,
-      "longitude": -47.8828
     }
   },
   {
@@ -778,42 +598,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": -15.8117,
       "longitude": -47.8172
-    }
-  },
-  {
-    "id": "vitoria",
-    "nome": "Vitória",
-    "estado": "Espírito Santo",
-    "cidade": "Vitória",
-    "regiao": "Sudeste",
-    "bioma": "Mata Atlântica e Litoral",
-    "descricao": "Capital insular com praias, ilhas, parques, convento histórico e culinária capixaba.",
-    "sobre": "Vitória é um destino de destaque em Espírito Santo, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?vitoria,brasil,turismo",
-    "tags": [
-      "Praia",
-      "Cultura",
-      "Gastronomia"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Vitória, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Vitória",
-      "Contato com a cultura e paisagens de Espírito Santo",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -20.3155,
-      "longitude": -40.3128
     }
   },
   {
@@ -925,42 +709,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "pirenopolis",
-    "nome": "Pirenópolis",
-    "estado": "Goiás",
-    "cidade": "Pirenópolis",
-    "regiao": "Centro-Oeste",
-    "bioma": "Cerrado",
-    "descricao": "Cidade histórica com casarões coloniais, cachoeiras, festas tradicionais e gastronomia regional.",
-    "sobre": "Pirenópolis é um destino de destaque em Goiás, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Centro-Oeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?pirenopolis,brasil,turismo",
-    "tags": [
-      "História",
-      "Cachoeira",
-      "Cultura"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Natureza e aventura",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Pirenópolis, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Pirenópolis",
-      "Contato com a cultura e paisagens de Goiás",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -15.8526,
-      "longitude": -48.9592
-    }
-  },
-  {
     "id": "caldas-novas",
     "nome": "Caldas Novas",
     "estado": "Goiás",
@@ -1030,78 +778,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": -2.4859,
       "longitude": -43.1286
-    }
-  },
-  {
-    "id": "sao-luis",
-    "nome": "São Luís",
-    "estado": "Maranhão",
-    "cidade": "São Luís",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Cerrado",
-    "descricao": "Capital com centro histórico colonial, azulejos portugueses, reggae, cultura popular e culinária regional.",
-    "sobre": "São Luís é um destino de destaque em Maranhão, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?sao,luis,brasil,turismo",
-    "tags": [
-      "História",
-      "Cultura",
-      "Gastronomia"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de São Luís, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em São Luís",
-      "Contato com a cultura e paisagens de Maranhão",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -2.5307,
-      "longitude": -44.3068
-    }
-  },
-  {
-    "id": "alcantara",
-    "nome": "Alcântara",
-    "estado": "Maranhão",
-    "cidade": "Alcântara",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Cerrado",
-    "descricao": "Cidade histórica próxima a São Luís, com ruínas, casarões, festas tradicionais e vista para a baía.",
-    "sobre": "Alcântara é um destino de destaque em Maranhão, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?alcantara,brasil,turismo",
-    "tags": [
-      "História",
-      "Cultura",
-      "Passeio de barco"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Alcântara, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Alcântara",
-      "Contato com a cultura e paisagens de Maranhão",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -2.4044,
-      "longitude": -44.4147
     }
   },
   {
@@ -1321,42 +997,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "ouro-preto",
-    "nome": "Ouro Preto",
-    "estado": "Minas Gerais",
-    "cidade": "Ouro Preto",
-    "regiao": "Sudeste",
-    "bioma": "Cerrado e Mata Atlântica",
-    "descricao": "Cidade histórica com igrejas barrocas, ladeiras, museus e forte herança do ciclo do ouro.",
-    "sobre": "Ouro Preto é um destino de destaque em Minas Gerais, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?ouro,preto,brasil,turismo",
-    "tags": [
-      "História",
-      "Arquitetura",
-      "Cultura"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Ouro Preto, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Ouro Preto",
-      "Contato com a cultura e paisagens de Minas Gerais",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -20.3856,
-      "longitude": -43.5035
-    }
-  },
-  {
     "id": "capitolio",
     "nome": "Capitólio",
     "estado": "Minas Gerais",
@@ -1429,42 +1069,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "belem",
-    "nome": "Belém",
-    "estado": "Pará",
-    "cidade": "Belém",
-    "regiao": "Norte",
-    "bioma": "Amazônia",
-    "descricao": "Capital amazônica com mercado Ver-o-Peso, ilhas, culinária paraense e patrimônio histórico.",
-    "sobre": "Belém é um destino de destaque em Pará, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?belem,brasil,turismo",
-    "tags": [
-      "Cultura",
-      "Gastronomia",
-      "Rio"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Belém, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Belém",
-      "Contato com a cultura e paisagens de Pará",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -1.4558,
-      "longitude": -48.4902
-    }
-  },
-  {
     "id": "alter-do-chao",
     "nome": "Alter do Chão",
     "estado": "Pará",
@@ -1534,42 +1138,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": -0.7167,
       "longitude": -48.5233
-    }
-  },
-  {
-    "id": "joao-pessoa",
-    "nome": "João Pessoa",
-    "estado": "Paraíba",
-    "cidade": "João Pessoa",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Caatinga",
-    "descricao": "Capital litorânea com praias urbanas, centro histórico, áreas verdes e pôr do sol no Jacaré.",
-    "sobre": "João Pessoa é um destino de destaque em Paraíba, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?joao,pessoa,brasil,turismo",
-    "tags": [
-      "Praia",
-      "História",
-      "Pôr do sol"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de João Pessoa, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em João Pessoa",
-      "Contato com a cultura e paisagens de Paraíba",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -7.1195,
-      "longitude": -34.845
     }
   },
   {
@@ -1717,6 +1285,42 @@ export const destinos: DestinoType[] = [
     }
   },
   {
+    "id": "jardim-botanico-curitiba",
+    "nome": "Jardim Botânico de Curitiba",
+    "estado": "Paraná",
+    "cidade": "Curitiba",
+    "regiao": "Sul",
+    "bioma": "Mata Atlântica",
+    "descricao": "Famoso cartão-postal de Curitiba, com sua icônica estufa de vidro em estilo art nouveau inspirada no Palácio de Cristal de Londres e belos jardins geométricos franceses.",
+    "sobre": "O Jardim Botânico é o principal símbolo de Curitiba, combinando paisagismo impecável, preservação da flora nativa e um ambiente de tranquilidade que reflete o planejamento urbano e o foco verde da região Sul do país.",
+    "imagem": "https://www.quintoandar.com.br/guias/wp-content/uploads/2023/08/jardim-botanico-de-curitiba.jpeg",
+    "tags": [
+      "Cartão-postal",
+      "Natureza",
+      "Arquitetura"
+    ],
+    "melhorEpoca": "Ano todo, mas a primavera garante os jardins mais vivos e floridos",
+    "duracaoRecomendada": "2 a 3 horas",
+    "tipoViagem": "Urbana e contemplação",
+    "nivelAcesso": "Fácil",
+    "publicoIdeal": "Famílias, casais, fotógrafos e viajantes em geral",
+    "comoChegar": "Acesso fácil pela Linha Turismo de Curitiba, ônibus convencionais, aplicativos de transporte ou carro, localizado no bairro de mesmo nome.",
+    "destaques": [
+      "A estufa principal com sua coleção de plantas",
+      "Caminhada vendada pelo Jardim das Sensações",
+      "Trilhas de bosque com Araucárias, árvores símbolo do estado"
+    ],
+    "dicas": [
+      "A entrada para o parque e para a estufa é gratuita.",
+      "O pôr do sol atrás da estufa rende fotografias maravilhosas.",
+      "Leve uma canga para fazer um piquenique nos gramados ao redor."
+    ],
+    "localizacao": {
+      "latitude": -25.4428,
+      "longitude": -49.2384
+    }
+  },
+  {
     "id": "buraco-do-padre",
     "nome": "Buraco do Padre",
     "estado": "Paraná",
@@ -1825,42 +1429,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "recife-e-olinda",
-    "nome": "Recife e Olinda",
-    "estado": "Pernambuco",
-    "cidade": "Recife",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Caatinga",
-    "descricao": "Conjunto urbano-cultural com centro histórico, carnaval, pontes, museus, igrejas e praias próximas.",
-    "sobre": "Recife e Olinda é um destino de destaque em Pernambuco, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?recife,e,olinda,brasil,turismo",
-    "tags": [
-      "História",
-      "Cultura",
-      "Urbano"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Recife, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Recife e Olinda",
-      "Contato com a cultura e paisagens de Pernambuco",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -8.0476,
-      "longitude": -34.877
-    }
-  },
-  {
     "id": "serra-da-capivara",
     "nome": "Serra da Capivara",
     "estado": "Piauí",
@@ -1933,75 +1501,75 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "teresina",
-    "nome": "Teresina",
-    "estado": "Piauí",
-    "cidade": "Teresina",
-    "regiao": "Nordeste",
-    "bioma": "Caatinga e Litoral",
-    "descricao": "Capital às margens dos rios Parnaíba e Poti, com parques, artesanato e gastronomia regional.",
-    "sobre": "Teresina é um destino de destaque em Piauí, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?teresina,brasil,turismo",
-    "tags": [
-      "Cultura",
-      "Gastronomia",
-      "Urbano"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Teresina, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Teresina",
-      "Contato com a cultura e paisagens de Piauí",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -5.0892,
-      "longitude": -42.8019
-    }
-  },
-  {
-    "id": "rio-de-janeiro",
-    "nome": "Rio de Janeiro",
+    "id": "cristo-redentor",
+    "nome": "Cristo Redentor",
     "estado": "Rio de Janeiro",
     "cidade": "Rio de Janeiro",
     "regiao": "Sudeste",
-    "bioma": "Mata Atlântica e Litoral",
-    "descricao": "Cidade com praias icônicas, Cristo Redentor, Pão de Açúcar, trilhas e vida cultural intensa.",
-    "sobre": "Rio de Janeiro é um destino de destaque em Rio de Janeiro, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?rio,de,janeiro,brasil,turismo",
+    "bioma": "Mata Atlântica",
+    "descricao": "Monumental estátua art déco de Jesus Cristo no topo do Morro do Corcovado, oferecendo vista panorâmica da cidade.",
+    "sobre": "O Cristo Redentor é um destino de destaque no Rio de Janeiro, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste e do Brasil no mundo.",
+    "imagem": "https://grupocataratas.com/wp-content/uploads/2023/04/Copia-de-Copia-de-DJI_0031-scaled.jpg",
     "tags": [
-      "Praia",
+      "Monumento",
       "Mirante",
-      "Cultura"
+      "Cartão-postal"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
+    "melhorEpoca": "Durante o ano todo, preferencialmente em dias de céu limpo",
+    "duracaoRecomendada": "1 dia",
+    "tipoViagem": "Cultural e turística",
     "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Rio de Janeiro, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "publicoIdeal": "Famílias, casais, turistas internacionais e grupos",
+    "comoChegar": "O acesso costuma ser feito pelo Trem do Corcovado ou por vans autorizadas que partem de pontos específicos da cidade do Rio de Janeiro.",
     "destaques": [
-      "Experiências marcantes em Rio de Janeiro",
-      "Contato com a cultura e paisagens de Rio de Janeiro",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Vista panorâmica estonteante da Baía de Guanabara e zona sul",
+      "Contato com o principal símbolo turístico do Brasil",
+      "Passeio histórico de trem pela Floresta da Tijuca"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Compre ingressos com antecedência pela internet.",
+      "Vá nas primeiras horas da manhã para evitar superlotação.",
+      "Leve protetor solar e óculos escuros."
     ],
     "localizacao": {
-      "latitude": -22.9068,
-      "longitude": -43.1729
+      "latitude": -22.9519,
+      "longitude": -43.2104
+    }
+  },
+  {
+    "id": "pao-de-acucar",
+    "nome": "Pão de Açúcar",
+    "estado": "Rio de Janeiro",
+    "cidade": "Rio de Janeiro",
+    "regiao": "Sudeste",
+    "bioma": "Mata Atlântica",
+    "descricao": "Complexo de morros acessado por um famoso teleférico (bondinho), oferecendo vistas espetaculares do Rio de Janeiro.",
+    "sobre": "O Pão de Açúcar é um atrativo icônico do Rio de Janeiro, combinando vistas inesquecíveis, passeios de teleférico e a essência visual da região Sudeste.",
+    "imagem": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/d7/5c/0d/vista-do-morro-da-urca.jpg?w=900&h=500&s=1",
+    "tags": [
+      "Mirante",
+      "Natureza",
+      "Cartão-postal"
+    ],
+    "melhorEpoca": "Dias ensolarados do ano todo, especialmente no fim de tarde",
+    "duracaoRecomendada": "Meio dia",
+    "tipoViagem": "Paisagem e contemplação",
+    "nivelAcesso": "Fácil",
+    "publicoIdeal": "Famílias, casais e fotógrafos",
+    "comoChegar": "Localizado no bairro da Urca, o acesso à estação do bondinho pode ser feito de carro, táxi ou ônibus interligado com o metrô.",
+    "destaques": [
+      "Passeio panorâmico no clássico Bondinho",
+      "Vista do pôr do sol sobre a Baía de Guanabara e Cristo Redentor",
+      "Estrutura com lojas, restaurantes e anfiteatro no Morro da Urca"
+    ],
+    "dicas": [
+      "Ir no final da tarde garante a vista tanto de dia quanto durante o pôr do sol e noite.",
+      "Compre ingressos online para evitar a fila da bilheteria.",
+      "Leve um casaco, pois pode ventar bastante no topo."
+    ],
+    "localizacao": {
+      "latitude": -22.9492,
+      "longitude": -43.1555
     }
   },
   {
@@ -2077,75 +1645,75 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "natal",
-    "nome": "Natal",
-    "estado": "Rio Grande do Norte",
-    "cidade": "Natal",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Dunas",
-    "descricao": "Capital com dunas, praias urbanas, Forte dos Reis Magos e acesso a passeios pelo litoral.",
-    "sobre": "Natal é um destino de destaque em Rio Grande do Norte, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?natal,brasil,turismo",
+    "id": "parque-lage",
+    "nome": "Parque Lage",
+    "estado": "Rio de Janeiro",
+    "cidade": "Rio de Janeiro",
+    "regiao": "Sudeste",
+    "bioma": "Mata Atlântica",
+    "descricao": "Parque público exuberante aos pés do Corcovado, famoso por seu casarão histórico de bela arquitetura que abriga uma escola de artes.",
+    "sobre": "O Parque Lage é um cenário de cinema no Rio de Janeiro, mesclando natureza da Floresta da Tijuca, arte e arquitetura deslumbrante na região Sudeste.",
+    "imagem": "https://panoramadeviagem.com.br/wp-content/uploads/2020/07/parque-lage-rio.jpg",
     "tags": [
-      "Praia",
-      "Dunas",
-      "História"
+      "Natureza",
+      "Arquitetura",
+      "Fotografia"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Natureza e aventura",
-    "nivelAcesso": "Moderado",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Natal, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "melhorEpoca": "Ano todo",
+    "duracaoRecomendada": "2 a 3 horas",
+    "tipoViagem": "Passeio cultural e ecológico",
+    "nivelAcesso": "Fácil",
+    "publicoIdeal": "Casais, jovens, fotógrafos e famílias",
+    "comoChegar": "Acesso de ônibus, táxi ou caminhando desde o Jardim Botânico (são muito próximos).",
     "destaques": [
-      "Experiências marcantes em Natal",
-      "Contato com a cultura e paisagens de Rio Grande do Norte",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Café da manhã no pátio interno do casarão ao lado da piscina",
+      "Trilhas na natureza (incluindo o começo da trilha para o Corcovado)",
+      "Exposições e atividades da Escola de Artes Visuais (EAV)"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Chegue bem cedo se quiser tomar café, pois o local costuma ter filas enormes.",
+      "Explore as cavernas artificiais e o aquário embutido nas pedras.",
+      "Ótimo lugar para ensaios fotográficos de luz natural."
     ],
     "localizacao": {
-      "latitude": -5.7793,
-      "longitude": -35.2009
+      "latitude": -22.9592,
+      "longitude": -43.212
     }
   },
   {
-    "id": "pipa",
-    "nome": "Pipa",
-    "estado": "Rio Grande do Norte",
-    "cidade": "Tibau do Sul",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Dunas",
-    "descricao": "Vila praiana com falésias, baías, golfinhos e vida noturna descontraída.",
-    "sobre": "Pipa é um destino de destaque em Rio Grande do Norte, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?pipa,brasil,turismo",
+    "id": "copacabana",
+    "nome": "Praia de Copacabana",
+    "estado": "Rio de Janeiro",
+    "cidade": "Rio de Janeiro",
+    "regiao": "Sudeste",
+    "bioma": "Mata Atlântica / Costeiro",
+    "descricao": "Uma das praias mais famosas do mundo, conhecida por seu icônico calçadão de ondas de pedras portuguesas e faixa de areia vibrante.",
+    "sobre": "Copacabana é a praia vitrine do Brasil no Rio de Janeiro, unindo praia, quiosques, hotéis de luxo e uma atmosfera vibrante e inconfundível na região Sudeste.",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/62/Praia_de_Copacabana_-_Rio_de_Janeiro%2C_Brasil.jpg",
     "tags": [
       "Praia",
-      "Falésias",
-      "Golfinhos"
+      "Lazer",
+      "Urbano"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
+    "melhorEpoca": "Primavera e Verão para praia; ano todo para turismo geral",
+    "duracaoRecomendada": "Meio dia a 1 dia",
+    "tipoViagem": "Praia e vida noturna",
     "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Tibau do Sul, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "publicoIdeal": "Turistas de todos os estilos, amantes de sol e atividades ao ar livre",
+    "comoChegar": "Acessível por dezenas de linhas de ônibus e 3 estações de metrô (Cardeal Arcoverde, Siqueira Campos, Cantagalo).",
     "destaques": [
-      "Experiências marcantes em Pipa",
-      "Contato com a cultura e paisagens de Rio Grande do Norte",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Caminhada ou pedalada no calçadão icônico",
+      "Visita ao Forte de Copacabana e sua famosa confeitaria Colombo",
+      "Esportes de areia e banho de mar"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Tome cuidado com seus pertences e não deixe nada sozinho na areia.",
+      "Aproveite as manhãs de domingo quando as pistas de carro são fechadas para lazer.",
+      "Experimente petiscar em um dos modernos quiosques ao longo da orla."
     ],
     "localizacao": {
-      "latitude": -6.2289,
-      "longitude": -35.0496
+      "latitude": -22.9711,
+      "longitude": -43.1822
     }
   },
   {
@@ -2221,42 +1789,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "porto-alegre",
-    "nome": "Porto Alegre",
-    "estado": "Rio Grande do Sul",
-    "cidade": "Porto Alegre",
-    "regiao": "Sul",
-    "bioma": "Pampa e Mata Atlântica",
-    "descricao": "Capital às margens do Guaíba, com centros culturais, parques, mercados e pôr do sol famoso.",
-    "sobre": "Porto Alegre é um destino de destaque em Rio Grande do Sul, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sul.",
-    "imagem": "https://source.unsplash.com/1200x800/?porto,alegre,brasil,turismo",
-    "tags": [
-      "Cultura",
-      "Urbano",
-      "Pôr do sol"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Porto Alegre, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Porto Alegre",
-      "Contato com a cultura e paisagens de Rio Grande do Sul",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calcalçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -30.0346,
-      "longitude": -51.2177
-    }
-  },
-  {
     "id": "cambara-do-sul",
     "nome": "Cambará do Sul",
     "estado": "Rio Grande do Sul",
@@ -2301,7 +1833,7 @@ export const destinos: DestinoType[] = [
     "bioma": "Amazônia",
     "descricao": "Capital às margens do Rio Madeira, com história ferroviária, mercados e cultura amazônica.",
     "sobre": "Porto Velho é um destino de destaque em Rondônia, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?porto,velho,brasil,turismo",
+    "imagem": "https://thumbs.dreamstime.com/b/estrutura-bem-vinda-na-entrada-da-cidade-da-sagacidade-de-porto-velho-96262839.jpg",
     "tags": [
       "História",
       "Rio",
@@ -2326,78 +1858,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": -8.7619,
       "longitude": -63.9039
-    }
-  },
-  {
-    "id": "guajara-mirim",
-    "nome": "Guajará-Mirim",
-    "estado": "Rondônia",
-    "cidade": "Guajará-Mirim",
-    "regiao": "Norte",
-    "bioma": "Amazônia",
-    "descricao": "Cidade fronteiriça com forte presença amazônica, rios, cultura regional e acesso a áreas naturais.",
-    "sobre": "Guajará-Mirim é um destino de destaque em Rondônia, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?guajara,mirim,brasil,turismo",
-    "tags": [
-      "Fronteira",
-      "Rio",
-      "Cultura"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Guajará-Mirim, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Guajará-Mirim",
-      "Contato com a cultura e paisagens de Rondônia",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -10.7828,
-      "longitude": -65.3394
-    }
-  },
-  {
-    "id": "ji-parana",
-    "nome": "Ji-Paraná",
-    "estado": "Rondônia",
-    "cidade": "Ji-Paraná",
-    "regiao": "Norte",
-    "bioma": "Amazônia",
-    "descricao": "Cidade cortada pelo rio Machado, com parques, eventos regionais e conexão com o interior rondoniense.",
-    "sobre": "Ji-Paraná é um destino de destaque em Rondônia, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?ji,parana,brasil,turismo",
-    "tags": [
-      "Rio",
-      "Cultura",
-      "Interior"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Ji-Paraná, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Ji-Paraná",
-      "Contato com a cultura e paisagens de Rondônia",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -10.8853,
-      "longitude": -61.9517
     }
   },
   {
@@ -2437,42 +1897,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "boa-vista",
-    "nome": "Boa Vista",
-    "estado": "Roraima",
-    "cidade": "Boa Vista",
-    "regiao": "Norte",
-    "bioma": "Amazônia e Lavrado",
-    "descricao": "Capital planejada com praças, parques, orla do Rio Branco e cultura do lavrado.",
-    "sobre": "Boa Vista é um destino de destaque em Roraima, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?boa,vista,brasil,turismo",
-    "tags": [
-      "Urbano",
-      "Rio",
-      "Cultura"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Boa Vista, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Boa Vista",
-      "Contato com a cultura e paisagens de Roraima",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": 2.8235,
-      "longitude": -60.6758
-    }
-  },
-  {
     "id": "serra-do-tepequem",
     "nome": "Serra do Tepequém",
     "estado": "Roraima",
@@ -2509,39 +1933,39 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "florianopolis",
-    "nome": "Florianópolis",
+    "id": "beto-carrero-world",
+    "nome": "Beto Carrero World",
     "estado": "Santa Catarina",
-    "cidade": "Florianópolis",
+    "cidade": "Penha",
     "regiao": "Sul",
-    "bioma": "Mata Atlântica e Litoral",
-    "descricao": "Capital insular com praias, lagoas, trilhas, dunas e forte cultura açoriana.",
-    "sobre": "Florianópolis é um destino de destaque em Santa Catarina, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sul.",
-    "imagem": "https://source.unsplash.com/1200x800/?florianopolis,brasil,turismo",
+    "bioma": "Mata Atlântica",
+    "descricao": "O maior parque temático da América Latina, com dezenas de montanhas-russas, shows ao vivo e áreas temáticas variadas.",
+    "sobre": "Beto Carrero World é um destino de entretenimento gigantesco em Santa Catarina, combinando adrenalina, shows e atrações para todas as idades na região Sul.",
+    "imagem": "https://www.farejaviagens.com.br/wp-content/uploads/2024/08/Beto-Carrero-World-Foto-Divulgac%CC%A7a%CC%83o.jpg",
     "tags": [
-      "Praia",
-      "Trilha",
-      "Cultura"
+      "Parque Temático",
+      "Diversão",
+      "Família"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Natureza e aventura",
-    "nivelAcesso": "Moderado",
-    "publicoIdeal": "Aventureiros, casais e amantes de natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Florianópolis, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "melhorEpoca": "Fora de alta temporada (março a novembro) para evitar filas longas",
+    "duracaoRecomendada": "1 a 2 dias",
+    "tipoViagem": "Diversão e família",
+    "nivelAcesso": "Fácil",
+    "publicoIdeal": "Famílias com crianças, adolescentes e grupos de amigos",
+    "comoChegar": "Acesso fácil de carro pela BR-101 ou pelo aeroporto de Navegantes, que fica a poucos quilômetros do parque.",
     "destaques": [
-      "Experiências marcantes em Florianópolis",
-      "Contato com a cultura e paisagens de Santa Catarina",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Montanha-russa FireWhip e Big Tower",
+      "Show épico de carros e motos Hot Wheels Epic Show",
+      "Área temática de Madagascar"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Compre o passaporte online com antecedência para pagar mais barato.",
+      "Considere comprar o 'Fast Pass' se for em dias de feriado ou férias.",
+      "Chegue cedo para aproveitar ao máximo antes das filas crescerem."
     ],
     "localizacao": {
-      "latitude": -27.5949,
-      "longitude": -48.5482
+      "latitude": -26.8016,
+      "longitude": -48.6146
     }
   },
   {
@@ -2617,75 +2041,75 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "sao-paulo",
-    "nome": "São Paulo",
+    "id": "parque-ibirapuera",
+    "nome": "Parque Ibirapuera",
     "estado": "São Paulo",
     "cidade": "São Paulo",
     "regiao": "Sudeste",
-    "bioma": "Mata Atlântica, Serra e Litoral",
-    "descricao": "Maior metrópole do país, com museus, parques, gastronomia, eventos e diversidade cultural.",
-    "sobre": "São Paulo é um destino de destaque em São Paulo, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?sao,paulo,brasil,turismo",
+    "bioma": "Mata Atlântica",
+    "descricao": "O principal parque urbano de São Paulo, que abriga lagos, ciclovias, áreas de lazer e museus com arquitetura de Oscar Niemeyer.",
+    "sobre": "O Parque Ibirapuera é o pulmão verde da capital paulista, combinando paisagens urbanas, esportes e atrativos culturais que representam a diversidade turística da região Sudeste.",
+    "imagem": "https://s3.sa-east-1.amazonaws.com/site-canopus/blog_canopus_o_que_fazer_no_parque_ibirapuera_9b9817c486.jpg",
     "tags": [
-      "Cultura",
-      "Gastronomia",
-      "Urbano"
+      "Parque Urbano",
+      "Lazer",
+      "Cultura"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
+    "melhorEpoca": "Ano todo",
+    "duracaoRecomendada": "Meio dia a 1 dia",
+    "tipoViagem": "Urbana, cultural e relaxamento",
     "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de São Paulo, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "publicoIdeal": "Famílias, esportistas, amantes da arte e do design",
+    "comoChegar": "Localizado na Vila Mariana, é acessível por várias linhas de ônibus, bicicleta e aplicativos de transporte a partir de metrôs próximos.",
     "destaques": [
-      "Experiências marcantes em São Paulo",
-      "Contato com a cultura e paisagens de São Paulo",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Museu de Arte Moderna (MAM) e Museu Afro Brasil",
+      "O icônico Auditório Ibirapuera e a Oca",
+      "Aluguel de bicicletas para contornar o lago"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Aos finais de semana o parque é bastante cheio, ideal para piqueniques.",
+      "Visite o pavilhão da Bienal se houver exposição acontecendo.",
+      "Leve água e roupas leves se for praticar exercícios."
     ],
     "localizacao": {
-      "latitude": -23.5505,
-      "longitude": -46.6333
+      "latitude": -23.5874,
+      "longitude": -46.6576
     }
   },
   {
-    "id": "campos-do-jordao",
-    "nome": "Campos do Jordão",
+    "id": "avenida-paulista",
+    "nome": "Avenida Paulista",
     "estado": "São Paulo",
-    "cidade": "Campos do Jordão",
+    "cidade": "São Paulo",
     "regiao": "Sudeste",
-    "bioma": "Mata Atlântica, Serra e Litoral",
-    "descricao": "Cidade serrana com clima frio, arquitetura europeia, parques, trilhas e gastronomia.",
-    "sobre": "Campos do Jordão é um destino de destaque em São Paulo, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Sudeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?campos,do,jordao,brasil,turismo",
+    "bioma": "Mata Atlântica",
+    "descricao": "O coração financeiro e cultural de São Paulo, repleto de arranha-céus, centros culturais, shoppings, bares e vasta vida urbana.",
+    "sobre": "A Avenida Paulista é o símbolo da agitação de São Paulo, combinando arquitetura vibrante, experiências multiculturais e centros de arte na região Sudeste.",
+    "imagem": "https://niss.com.br/wp-content/uploads/2024/01/roteiro-na-avenida-paulista-um-dia-de-turista-em-sao-paulo-1.jpeg",
     "tags": [
-      "Serra",
-      "Gastronomia",
-      "Frio"
+      "Metrópole",
+      "Cultura",
+      "Urbano"
     ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
+    "melhorEpoca": "Ano todo",
+    "duracaoRecomendada": "1 a 2 dias",
+    "tipoViagem": "Cultural, urbana e gastronômica",
     "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Campos do Jordão, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
+    "publicoIdeal": "Jovens, casais, turistas de negócios e amantes de metrópoles",
+    "comoChegar": "Acessível por várias estações de metrô da Linha 2-Verde (como Consolação, Trianon-Masp e Brigadeiro).",
     "destaques": [
-      "Experiências marcantes em Campos do Jordão",
-      "Contato com a cultura e paisagens de São Paulo",
-      "Boas opções para fotos, passeios e roteiros regionais"
+      "Museu de Arte de São Paulo (MASP)",
+      "Centro Cultural FIESP e Japan House",
+      "Avenida fechada para pedestres aos domingos"
     ],
     "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
+      "Passeie no domingo quando a via é fechada para carros e há muita arte de rua.",
+      "Explore as galerias e mirantes como o Sesc Avenida Paulista.",
+      "Fique atento aos seus pertences pessoais ao caminhar na multidão."
     ],
     "localizacao": {
-      "latitude": -22.7399,
-      "longitude": -45.5914
+      "latitude": -23.5615,
+      "longitude": -46.6559
     }
   },
   {
@@ -2725,42 +2149,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "aracaju",
-    "nome": "Aracaju",
-    "estado": "Sergipe",
-    "cidade": "Aracaju",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Caatinga",
-    "descricao": "Capital com orla planejada, praias, mercados, passarelas e culinária sergipana.",
-    "sobre": "Aracaju é um destino de destaque em Sergipe, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?aracaju,brasil,turismo",
-    "tags": [
-      "Praia",
-      "Gastronomia",
-      "Urbano"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Praia e lazer",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Aracaju, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Aracaju",
-      "Contato com a cultura e paisagens de Sergipe",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -10.9472,
-      "longitude": -37.0731
-    }
-  },
-  {
     "id": "canion-do-xingo",
     "nome": "Cânion do Xingó",
     "estado": "Sergipe",
@@ -2797,42 +2185,6 @@ export const destinos: DestinoType[] = [
     }
   },
   {
-    "id": "sao-cristovao",
-    "nome": "São Cristóvão",
-    "estado": "Sergipe",
-    "cidade": "São Cristóvão",
-    "regiao": "Nordeste",
-    "bioma": "Litoral e Caatinga",
-    "descricao": "Cidade histórica com praças, igrejas e patrimônio colonial próximo a Aracaju.",
-    "sobre": "São Cristóvão é um destino de destaque em Sergipe, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Nordeste.",
-    "imagem": "https://source.unsplash.com/1200x800/?sao,cristovao,brasil,turismo",
-    "tags": [
-      "História",
-      "Cultura",
-      "Arquitetura"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Cultura e história",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de São Cristóvão, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em São Cristóvão",
-      "Contato com a cultura e paisagens de Sergipe",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -11.0147,
-      "longitude": -37.2064
-    }
-  },
-  {
     "id": "jalapao",
     "nome": "Jalapão",
     "estado": "Tocantins",
@@ -2866,42 +2218,6 @@ export const destinos: DestinoType[] = [
     "localizacao": {
       "latitude": -10.5413,
       "longitude": -46.4168
-    }
-  },
-  {
-    "id": "palmas",
-    "nome": "Palmas",
-    "estado": "Tocantins",
-    "cidade": "Palmas",
-    "regiao": "Norte",
-    "bioma": "Cerrado",
-    "descricao": "Capital planejada às margens do Lago de Palmas, com praias de água doce e acesso ao cerrado.",
-    "sobre": "Palmas é um destino de destaque em Tocantins, combinando paisagens, experiências locais e atrativos que ajudam a representar a diversidade turística da região Norte.",
-    "imagem": "https://source.unsplash.com/1200x800/?palmas,brasil,turismo",
-    "tags": [
-      "Lago",
-      "Urbano",
-      "Cerrado"
-    ],
-    "melhorEpoca": "Durante a estação seca ou fora dos períodos de chuva intensa",
-    "duracaoRecomendada": "2 a 4 dias",
-    "tipoViagem": "Natureza e aventura",
-    "nivelAcesso": "Fácil",
-    "publicoIdeal": "Famílias, casais e viajantes interessados em cultura e natureza",
-    "comoChegar": "O acesso costuma ser feito pela cidade de Palmas, usando rodovias, aeroporto regional ou passeios locais conforme a estrutura do destino.",
-    "destaques": [
-      "Experiências marcantes em Palmas",
-      "Contato com a cultura e paisagens de Tocantins",
-      "Boas opções para fotos, passeios e roteiros regionais"
-    ],
-    "dicas": [
-      "Confira a previsão do tempo antes de montar o roteiro.",
-      "Use roupas e calçados adequados ao tipo de passeio.",
-      "Verifique ingressos, guias e regras de visitação com antecedência."
-    ],
-    "localizacao": {
-      "latitude": -10.1849,
-      "longitude": -48.3336
     }
   },
   {
