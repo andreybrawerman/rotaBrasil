@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import { Destino } from '../data/destinos'
+import type { DestinoType } from '../data/destinos'
 
-interface Props {
-  destino: Destino
+interface CardDestinoProps {
+  destino: DestinoType;
 }
 
-const CardDestino = ({ destino }: Props) => {
+const CardDestino = ({ destino }: CardDestinoProps) => {
   return (
     <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
       <img
