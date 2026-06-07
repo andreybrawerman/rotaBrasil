@@ -32,14 +32,69 @@ function Login() {
     return novosErros
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const erros = validar()
-    if (Object.keys(erros).length > 0) { setErrors(erros); return }
-    setErrors({})
-    Swal.fire({ title: 'Sucesso!', text: 'Login realizado com sucesso', icon: 'success', confirmButtonText: 'OK' })
-    navigate('/')
+  const handleSubmit = async (e: React.FormEvent) => {
+
+  e.preventDefault()
+
+  const erros = validar()
+
+  if (Object.keys(erros).length > 0) {
+    setErrors(erros)
+    return
   }
+
+  try {
+
+    const resposta = await fetch(
+      'http://localhost:5000/login',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: form.email,
+          senha: form.senha
+        })
+      }
+    )
+
+    const dados = await resposta.json()
+
+    if (!resposta.ok) {
+
+      Swal.fire({
+        title: 'Erro',
+        text: dados.erro,
+        icon: 'error'
+      })
+
+      return
+    }
+
+    localStorage.setItem(
+      'usuario',
+      JSON.stringify(dados.usuario)
+    )
+
+    Swal.fire({
+      title: 'Sucesso!',
+      text: 'Login realizado com sucesso',
+      icon: 'success'
+    })
+
+    navigate('/')
+
+  } catch {
+
+    Swal.fire({
+      title: 'Erro',
+      text: 'Servidor indisponível',
+      icon: 'error'
+    })
+
+  }
+}
 
   const inputClass = "w-full px-4 py-[0.95rem] border border-[#dbe2ea] rounded-[0.9rem] text-base outline-none focus:border-[color:var(--color-bm-teal)] focus:shadow-[0_0_0_3px_rgba(84,158,156,0.15)] font-[family-name:var(--font-sans)]"
 

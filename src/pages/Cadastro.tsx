@@ -49,14 +49,62 @@ function Cadastro() {
     return novosErros
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const erros = validar()
-    if (Object.keys(erros).length > 0) { setErrors(erros); return }
-    setErrors({})
-    Swal.fire({ title: 'Sucesso!', text: 'Cadastro realizado com sucesso', icon: 'success', confirmButtonText: 'OK' })
-    navigate('/login')
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+
+  const erros = validar()
+
+  if (Object.keys(erros).length > 0) {
+    setErrors(erros)
+    return
   }
+
+  try {
+
+    const resposta = await fetch(
+      'http://localhost:5000/usuarios',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          nome: form.nome,
+          email: form.email,
+          senha: form.senha
+        })
+      }
+    )
+
+    const dados = await resposta.json()
+
+    if (!resposta.ok) {
+      Swal.fire({
+        title: 'Erro',
+        text: dados.erro,
+        icon: 'error'
+      })
+      return
+    }
+
+    Swal.fire({
+      title: 'Sucesso!',
+      text: 'Cadastro realizado com sucesso',
+      icon: 'success'
+    })
+
+    navigate('/login')
+
+  } catch {
+
+    Swal.fire({
+      title: 'Erro',
+      text: 'Não foi possível conectar ao servidor',
+      icon: 'error'
+    })
+
+  }
+}
 
   const inputClass = "w-full px-[1rem] py-[0.95rem] border border-[#dbe2ea] rounded-[0.9rem] text-[1rem] outline-none focus:border-[color:var(--color-bm-teal)] focus:shadow-[0_0_0_3px_rgba(84,158,156,0.15)] font-[family-name:var(--font-sans)]"
 
