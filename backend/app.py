@@ -1,6 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_mysqldb import MySQL
+import jwt
+import datetime
+from functools import wraps
+
+SECRET_KEY = "rotabrasil_chave_secreta_muito_maior_123456789"
 
 app = Flask(__name__)
 CORS(app)
@@ -93,15 +98,74 @@ def login():
             'erro': 'Senha incorreta'
         }), 401
 
+    token = jwt.encode(
+    {
+        'user_id': usuario[0],
+        'email': usuario[2],
+        'role': usuario[4],
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=2)
+    },
+    SECRET_KEY,
+    algorithm='HS256'
+)
+
     return jsonify({
         'mensagem': 'Login realizado com sucesso',
+        'token': token,
         'usuario': {
             'id': usuario[0],
             'nome': usuario[1],
             'email': usuario[2],
             'role': usuario[4]
         }
+    }), 200
+
+def token_required(f):
+
+    @wraps(f)
+    def decorated(*args, **kwargs):
+
+        token = request.headers.get('Authorization')
+        print("TOKEN RECEBIDO:", token)
+        
+        if not token:
+            return jsonify({
+                'erro': 'Token não enviado'
+            }), 401
+
+        try:
+            token = token.replace('Bearer ', '')
+
+            dados_usuario = jwt.decode(
+                token,
+                SECRET_KEY,
+                algorithms=['HS256']
+            )
+
+        except jwt.ExpiredSignatureError:
+            return jsonify({
+                'erro': 'Token expirado'
+            }), 401
+
+        except jwt.InvalidTokenError:
+            return jsonify({
+                'erro': 'Token inválido'
+            }), 401
+
+        return f(dados_usuario, *args, **kwargs)
+
+    return decorated
+
+@app.route('/perfil', methods=['GET'])
+@token_required
+def perfil(usuario):
+
+    return jsonify({
+        'mensagem': 'Acesso autorizado',
+        'usuario': usuario
     })
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

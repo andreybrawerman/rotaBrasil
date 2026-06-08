@@ -77,6 +77,11 @@ function Login() {
       JSON.stringify(dados.usuario)
     )
 
+    localStorage.setItem(
+      'token',
+      dados.token
+    )
+
     Swal.fire({
       title: 'Sucesso!',
       text: 'Login realizado com sucesso',
