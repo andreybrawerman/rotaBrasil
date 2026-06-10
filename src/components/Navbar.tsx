@@ -18,20 +18,54 @@ const Navbar = () => {
 
   const [mostrarPopup, setMostrarPopup] = useState(false)
   const [fotoPerfil, setFotoPerfil] = useState(
-    localStorage.getItem('fotoPerfil')
+  usuario?.foto_perfil
+    ? `http://localhost:5000/uploads/fotos/${usuario.foto_perfil}`
+    : null
   )
   const [menuAberto, setMenuAberto] = useState(false)
 
-  const trocarFoto = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const arquivo = e.target.files?.[0]
-    if (!arquivo) return
-    const leitor = new FileReader()
-    leitor.onloadend = () => {
-      localStorage.setItem('fotoPerfil', leitor.result as string)
-      setFotoPerfil(leitor.result as string)
+  const trocarFoto = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const arquivo = e.target.files?.[0]
+
+  if (!arquivo) return
+
+  const formData = new FormData()
+
+  formData.append('foto', arquivo)
+  formData.append('user_id', usuario.id)
+
+  try {
+    const resposta = await fetch(
+      'http://localhost:5000/upload-foto',
+      {
+        method: 'POST',
+        body: formData
+      }
+    )
+
+    const dados = await resposta.json()
+
+    if (resposta.ok) {
+      const fotoUrl = `http://localhost:5000/uploads/fotos/${dados.foto}`
+
+      setFotoPerfil(fotoUrl)
+
+      const usuarioAtualizado = {
+        ...usuario,
+        foto_perfil: dados.foto
+      }
+
+      localStorage.setItem(
+        'usuario',
+        JSON.stringify(usuarioAtualizado)
+      )
+
+      setMostrarPopup(false)
     }
-    leitor.readAsDataURL(arquivo)
+  } catch (erro) {
+    console.error(erro)
   }
+}
 
   return (
     <>

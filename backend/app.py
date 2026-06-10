@@ -4,11 +4,26 @@ from flask_mysqldb import MySQL
 import jwt
 import datetime
 from functools import wraps
+from flask import send_from_directory
+import os
+from werkzeug.utils import secure_filename
 
 SECRET_KEY = "rotabrasil_chave_secreta_muito_maior_123456789"
 
 app = Flask(__name__)
 CORS(app)
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+UPLOAD_FOLDER = os.path.join(
+    BASE_DIR,
+    'uploads',
+    'fotos'
+)
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Configuração do MySQL
 app.config['MYSQL_HOST'] = 'localhost'
@@ -78,8 +93,12 @@ def login():
     cursor = mysql.connection.cursor()
 
     cursor.execute(
-        "SELECT user_ID, nome, email, senha, role FROM Usuario WHERE email = %s",
-        (email,)
+    """
+    SELECT user_ID, nome, email, senha, role, foto_perfil
+    FROM Usuario
+    WHERE email = %s
+    """,
+    (email,)
     )
 
     usuario = cursor.fetchone()
@@ -112,11 +131,12 @@ def login():
     return jsonify({
         'mensagem': 'Login realizado com sucesso',
         'token': token,
-        'usuario': {
+       'usuario': {
             'id': usuario[0],
             'nome': usuario[1],
             'email': usuario[2],
-            'role': usuario[4]
+            'role': usuario[4],
+            'foto_perfil': usuario[5]
         }
     }), 200
 
@@ -165,7 +185,60 @@ def perfil(usuario):
         'usuario': usuario
     })
 
+@app.route('/upload-foto', methods=['POST'])
+def upload_foto():
 
+    if 'foto' not in request.files:
+        return jsonify({
+            'erro': 'Nenhuma foto enviada'
+        }), 400
+
+    foto = request.files['foto']
+
+    if foto.filename == '':
+        return jsonify({
+            'erro': 'Arquivo inválido'
+        }), 400
+
+    user_id = request.form.get('user_id')
+
+    extensao = foto.filename.split('.')[-1]
+
+    nome_arquivo = f'{user_id}.{extensao}'
+
+    caminho = os.path.join(
+        app.config['UPLOAD_FOLDER'],
+        nome_arquivo
+    )
+
+    foto.save(caminho)
+
+    cursor = mysql.connection.cursor()
+
+    cursor.execute(
+        """
+        UPDATE Usuario
+        SET foto_perfil = %s
+        WHERE user_ID = %s
+        """,
+        (nome_arquivo, user_id)
+    )
+
+    mysql.connection.commit()
+
+    cursor.close()
+
+    return jsonify({
+        'mensagem': 'Foto salva com sucesso',
+        'foto': nome_arquivo
+    })
+
+@app.route('/uploads/fotos/<filename>')
+def servir_foto(filename):
+    return send_from_directory(
+        app.config['UPLOAD_FOLDER'],
+        filename
+    )
 
 if __name__ == '__main__':
     app.run(debug=True)
