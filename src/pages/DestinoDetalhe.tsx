@@ -749,6 +749,51 @@ function DestinoDetalhe() {
               </div>
             )}
 
+            {/* Agências de viagem */}
+            <div className="rounded-[2rem] border border-slate-100 bg-white p-8 shadow-sm">
+              <div className="mb-5 flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#DFECC6] text-[#485C11]">
+                  <Compass size={24} />
+                </div>
+                <h3 className="text-2xl font-black text-[#485C11]">
+                  Comprar pacote
+                </h3>
+              </div>
+
+              <p className="mb-5 leading-relaxed text-slate-500">
+                Encontre pacotes de viagem para <strong className="text-[#485C11]">{destino.nome}</strong> nas principais agências do Brasil.
+              </p>
+
+              <div className="flex flex-col gap-3">
+                <a
+                  href={`https://www.google.com/search?q=pacote+de+viagem+para+${encodeURIComponent(destino.nome + ' ' + destino.estado)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#4285F4] px-5 py-3 text-center font-black text-white no-underline transition hover:opacity-90"
+                >
+                  🔍 Buscar pacotes no Google
+                </a>
+
+                <a
+                  href={`https://www.booking.com/searchresults.html?ss=${encodeURIComponent(destino.cidade + ', Brasil')}&lang=pt-br`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#003580] px-5 py-3 text-center font-black text-white no-underline transition hover:opacity-90"
+                >
+                  🏨 Ver hospedagens no Booking
+                </a>
+
+                <a
+                  href={`https://www.google.com/search?q=passagens+aéreas+para+${encodeURIComponent(destino.cidade)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#34A853] px-5 py-3 text-center font-black text-white no-underline transition hover:opacity-90"
+                >
+                  ✈️ Buscar passagens aéreas
+                </a>
+              </div>
+            </div>
+
             {/* CTA */}
             <div className="rounded-[2rem] bg-[#485C11] p-8 text-white shadow-sm">
               <h3 className="mb-3 text-2xl font-black">Planeje sua visita</h3>
