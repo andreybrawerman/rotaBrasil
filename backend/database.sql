@@ -22,5 +22,5 @@ CREATE TABLE Destinos (
     estado VARCHAR(50) NOT NULL,
     descricao VARCHAR(200) NOT NULL,
     imagem VARCHAR(255),
-    link_agencia VARCHAR(255)
+    link VARCHAR(255)
 );
