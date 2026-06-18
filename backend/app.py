@@ -202,9 +202,38 @@ def upload_foto():
 
     user_id = request.form.get('user_id')
 
-    extensao = foto.filename.split('.')[-1]
+    if not user_id:
+        return jsonify({
+            'erro': 'ID do usuário não informado'
+        }), 400
 
-    nome_arquivo = f'{user_id}.{extensao}'
+    import time
+
+    extensao = foto.filename.rsplit('.', 1)[1].lower()
+
+    nome_arquivo = f'{user_id}_{int(time.time())}.{extensao}'
+
+    cursor = mysql.connection.cursor()
+
+    cursor.execute(
+        """
+        SELECT foto_perfil
+        FROM Usuario
+        WHERE user_ID = %s
+        """,
+        (user_id,)
+    )
+
+    resultado = cursor.fetchone()
+
+    if resultado and resultado[0]:
+        caminho_antigo = os.path.join(
+            app.config['UPLOAD_FOLDER'],
+            resultado[0]
+        )
+
+        if os.path.exists(caminho_antigo):
+            os.remove(caminho_antigo)
 
     caminho = os.path.join(
         app.config['UPLOAD_FOLDER'],
@@ -212,8 +241,6 @@ def upload_foto():
     )
 
     foto.save(caminho)
-
-    cursor = mysql.connection.cursor()
 
     cursor.execute(
         """
@@ -231,7 +258,7 @@ def upload_foto():
     return jsonify({
         'mensagem': 'Foto salva com sucesso',
         'foto': nome_arquivo
-    })
+    }), 200
 
 @app.route('/uploads/fotos/<filename>')
 def servir_foto(filename):

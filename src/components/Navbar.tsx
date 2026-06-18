@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { User, Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 const Navbar = () => {
   const navigate = useNavigate()
@@ -17,11 +18,15 @@ const Navbar = () => {
   }
 
   const [mostrarPopup, setMostrarPopup] = useState(false)
-  const [fotoPerfil, setFotoPerfil] = useState(
-  usuario?.foto_perfil
-    ? `http://localhost:5000/uploads/fotos/${usuario.foto_perfil}`
-    : null
-  )
+  const [fotoPerfil, setFotoPerfil] = useState<string | null>(null)
+  useEffect(() => {
+  if (usuario?.foto_perfil) {
+    setFotoPerfil(
+      `http://localhost:5000/uploads/fotos/${usuario.foto_perfil}`
+    )
+  }
+}, [usuario])
+
   const [menuAberto, setMenuAberto] = useState(false)
 
   const trocarFoto = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -46,7 +51,7 @@ const Navbar = () => {
     const dados = await resposta.json()
 
     if (resposta.ok) {
-      const fotoUrl = `http://localhost:5000/uploads/fotos/${dados.foto}`
+      const fotoUrl =`http://localhost:5000/uploads/fotos/${dados.foto}?t=${Date.now()}`
 
       setFotoPerfil(fotoUrl)
 
